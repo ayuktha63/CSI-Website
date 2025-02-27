@@ -1,0 +1,86 @@
+/* Event Box Section */
+.event-box {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 30px 0;
+    background: linear-gradient(90deg, #000009 0%, #161616 100%);
+    width: 100%;
+    height: auto;
+    min-height: 300px;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+/* Event Container */
+.event-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    flex-wrap: wrap;
+    width: 85%;
+    margin-top: 50px;
+}
+
+/* Event Box */
+.box {
+    display: flex;
+    width: 100%;
+    max-width: 220px;
+    height: 160px;
+    padding: 35px 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: 3px solid #FFF;
+    background: linear-gradient(90deg, #111111 0%, #333333 100%);
+    color: white;
+    font-size: 1.3rem;
+    text-align: center;
+    flex-shrink: 0;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.box:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.3);
+}
+
+/* 🌍 RESPONSIVENESS */
+@media (max-width: 1200px) {
+    .event-container {
+        gap: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .event-box {
+        padding: 25px 0;
+    }
+
+    .event-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .box {
+        width: 85%;
+        padding: 30px 15px;
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .event-box {
+        padding: 20px 0;
+    }
+
+    .box {
+        width: 95%;
+        padding: 25px 12px;
+        font-size: 1rem;
+        border-radius: 15px;
+    }
+}

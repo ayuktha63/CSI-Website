@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import AOS styles
 
-function App() {
+import Header from "./components/Header";
+import Home from "./components/Home";
+import EventBox from "./components/EventBox";
+import AboutCSI from "./components/AboutCSI";
+import Footer from "./components/Footer";
+
+const App = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration in ms
+      once: false, // Ensures animations happen only once per scroll
+    });
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      <main>
+        <Home />
+        <EventBox />
+        <AboutCSI />
+      </main>
+      <Footer />
     </div>
   );
-}
+};
 
 export default App;

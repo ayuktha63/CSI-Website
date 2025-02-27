@@ -1,38 +1,99 @@
-.App {
-  text-align: center;
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+main {
+  padding-top: 80px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+/* Section Styles */
+.section {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  text-align: center;
+  padding: 50px 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Section Backgrounds */
+#home {
+  background: #001f3f;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#about {
+  background: #0074D9;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#events {
+  background: #7FDBFF;
+  color: black;
+}
+
+#contact {
+  background: #39CCCC;
+  color: black;
+}
+
+/* Responsive Typography */
+.section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.section p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+/* 🌍 Mobile & Tablet Responsiveness */
+@media (max-width: 1024px) {
+  .section {
+    padding: 40px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .section h1 {
+    font-size: 2.2rem;
+  }
+
+  .section p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 30px;
+  }
+
+  .section h1 {
+    font-size: 1.8rem;
+  }
+
+  .section p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 20px;
+  }
+
+  .section h1 {
+    font-size: 1.5rem;
+  }
+
+  .section p {
+    font-size: 0.95rem;
   }
 }
