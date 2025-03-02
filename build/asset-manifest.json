@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7f1dcad0.css",
+    "main.js": "/static/js/main.4d3bf0a6.js",
+    "static/js/453.ad95c077.chunk.js": "/static/js/453.ad95c077.chunk.js",
+    "static/media/landing.png": "/static/media/landing.394c0a0b0af2ea682033.png",
+    "static/media/header_bg.png": "/static/media/header_bg.33073e76220dd7a9cde3.png",
+    "static/media/knowcsi.png": "/static/media/knowcsi.363b46a4852c1af8e878.png",
+    "static/media/logo.png": "/static/media/logo.896f4a6b37fe0d783e8e.png",
+    "static/media/csi_logo_about.png": "/static/media/csi_logo_about.5ccfa436babcfeed079f.png",
+    "static/media/joinbg.png": "/static/media/joinbg.94baa554ff61e12a6ae9.png",
+    "static/media/bottomleft.svg": "/static/media/bottomleft.c4e7dacfa650963eb764d32e484783e0.svg",
+    "static/media/topright.svg": "/static/media/topright.5fbbafca84eb25687fb03cb7d60610b0.svg",
+    "static/media/instagram.svg": "/static/media/instagram.ac99e496a8e1eb0e01446d256868ef23.svg",
+    "static/media/discord.svg": "/static/media/discord.ca0067719f76d2e20b86bfd43065bbd4.svg",
+    "index.html": "/index.html",
+    "static/media/Linkedin.svg": "/static/media/Linkedin.0832ac90608751778e588f4f8207bb3b.svg",
+    "static/media/mail.svg": "/static/media/mail.f651b14f2299613b270d185f73ae8395.svg",
+    "main.7f1dcad0.css.map": "/static/css/main.7f1dcad0.css.map",
+    "main.4d3bf0a6.js.map": "/static/js/main.4d3bf0a6.js.map",
+    "453.ad95c077.chunk.js.map": "/static/js/453.ad95c077.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7f1dcad0.css",
+    "static/js/main.4d3bf0a6.js"
+  ]
+}
