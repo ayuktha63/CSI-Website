@@ -1,4 +1,5 @@
 import React from "react";
+import { Link, useLocation, useNavigate } from "react-router-dom"; // Import hooks for navigation
 import "../styles/Footer.css"; // Import CSS
 import logo from "../assets/csi_logo_about.png"; // Ensure logo is in assets folder
 
@@ -9,6 +10,20 @@ import mailIcon from "../Vector/mail.svg";
 import linkedinIcon from "../Vector/Linkedin.svg";
 
 const Footer = () => {
+    const location = useLocation();
+    const navigate = useNavigate();
+
+    const handleScrollToSection = (sectionId) => {
+        if (location.pathname !== "/") {
+            navigate("/");
+            setTimeout(() => {
+                document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
+            }, 500);
+        } else {
+            document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
+        }
+    };
+
     return (
         <footer className="footer">
             {/* CSI Logo */}
@@ -16,25 +31,25 @@ const Footer = () => {
 
             {/* Navigation Links */}
             <nav className="footer-links">
-                <a href="#home">Home</a>
-                <a href="#about">About Us</a>
-                <a href="#team">Team</a>
-                <a href="#events">Events</a>
-                <a href="#join">Join CSI</a>
+                <Link to="/">Home</Link>
+                <a href="#about" onClick={(e) => { e.preventDefault(); handleScrollToSection("about"); }}>About Us</a>
+                <Link to="/team">Team</Link>
+                <Link to="/events">Events</Link>
+                <a href="#join" onClick={(e) => { e.preventDefault(); handleScrollToSection("join"); }}>Join CSI</a>
             </nav>
 
             {/* Social Media Icons */}
             <div className="footer-icons">
-                <a href="https://www.instagram.com/csimbcet/" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.instagram.com/csimbcet/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                     <img src={instaIcon} alt="Instagram" className="footer-icon-img" />
                 </a>
-                <a href="https://discord.com" target="_blank" rel="noopener noreferrer">
+                <a href="https://discord.com" target="_blank" rel="noopener noreferrer" aria-label="Discord">
                     <img src={discordIcon} alt="Discord" className="footer-icon-img" />
                 </a>
-                <a href="mailto:csimbcet@mbcet.ac.in">
+                <a href="mailto:csimbcet@mbcet.ac.in" aria-label="Email">
                     <img src={mailIcon} alt="Email" className="footer-icon-img" />
                 </a>
-                <a href="https://www.linkedin.com/company/csi-sb-mbcet/posts/?feedView=all" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/company/csi-sb-mbcet/posts/?feedView=all" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                     <img src={linkedinIcon} alt="LinkedIn" className="footer-icon-img" />
                 </a>
             </div>
@@ -47,7 +62,7 @@ const Footer = () => {
                 © 2025 CSI MBCET. All Rights Reserved.
             </p>
 
-            {/* Designer Credit */}
+            {/* Designer & Developer Credit */}
             <p className="footer-designer">Designed by Niranj R</p>
             <p className="footer-designer">Developed by Krishna Prasad</p>
         </footer>
