@@ -1,7 +1,8 @@
-import React from "react";
-import "../styles/Events.css"; // Make sure to create a corresponding CSS file
-import Header from "./Header";
 
+import React from "react";
+import "../styles/Events.css"; // Ensure this CSS file exists
+import Header from "./Header";
+// eslint-disable-next-line
 const eventsList = [
     {
         id: 1,
@@ -30,20 +31,20 @@ const Events = () => {
     return (
         <div>
             <Header />
-            <section className="eventspage">
-                <h1 className="eventstitle">Upcoming Events</h1>
-                <div className="eventscontainer">
-                    {eventsList.map((event) => (
-                        <div className="eventcard" key={event.id}>
-                            <img src={event.image} alt={event.title} className="eventimage" />
-                            <div className="eventinfo">
-                                <h2>{event.title}</h2>
-                                <p className="eventdate">{event.date}</p>
-                                <p className="eventdescription">{event.description}</p>
-                            </div>
-                        </div>
-                    ))}
+            <section
+                className="eventspage"
+            >
+                <div className="image-container">
+                    {/* Background Image */}
+                    <img src="/assets/Eventspage_bg.png" alt="EventsBanner" className="eventsimage" />
+
+                    {/* Mouse Image with Vertical Line */}
+                    <div className="mouse-container">
+                        <img src="/assets/mouse.svg" alt="CenteredImage" className="centeredimage" />
+                        <div className="verticalline"></div>
+                    </div>
                 </div>
+                {/* Events List */}
             </section>
         </div>
     );

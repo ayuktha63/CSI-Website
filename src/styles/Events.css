@@ -1,13 +1,63 @@
-/* Events Page */
 .eventspage {
     text-align: center;
     padding: 50px 20px;
-    background: #f9f9f9;
+    background: #000000;
+    min-height: 200vh;
+    color: white;
+    position: relative;
 }
 
+/* Image Container */
+.image-container {
+    position: relative;
+    width: 100%;
+}
+
+/* Background Image */
+.eventsimage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-top: 100px;
+}
+
+/* Mouse Icon and Vertical Line */
+.mouse-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+/* Mouse Image */
+.centeredimage {
+    width: 100px;
+    height: auto;
+}
+
+/* Vertical Line - Full Height */
+.verticalline {
+    width: 2px;
+    /* Line thickness */
+    background-color: white;
+    /* Line color */
+    position: absolute;
+    top: 100%;
+    /* Starts right below the mouse image */
+    left: 50%;
+    transform: translateX(-50%);
+    height: calc(150vh - 35%);
+    /* Extends from mouse to bottom */
+}
+
+/* Events Section */
 .eventstitle {
     font-size: 2.5rem;
-    color: #333;
+    color: white;
     margin-bottom: 30px;
 }
 
@@ -53,4 +103,46 @@
 
 .eventdescription {
     color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .centeredimage {
+        width: 80px;
+        top: 40%;
+        margin-top: 200%;
+    }
+
+    .verticalline {
+        height: calc(100vh - 40%);
+    }
+
+    .eventscontainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .eventcard {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .centeredimage {
+        width: 60px;
+        top: 45%;
+        margin-top: 300%;
+    }
+
+    .verticalline {
+        height: calc(100vh - 45%);
+    }
+
+    .eventspage {
+        padding: 30px 10px;
+    }
+
+    .eventstitle {
+        font-size: 2rem;
+    }
 }
