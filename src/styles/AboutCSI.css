@@ -8,7 +8,7 @@
     text-align: center;
     min-height: 50vh;
     padding: 60px 20px;
-    background: linear-gradient(90deg, #000009 0%, #161616 100%);
+    background: #000009;
     color: white;
     overflow: hidden;
 }
