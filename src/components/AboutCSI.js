@@ -7,7 +7,7 @@ import rightImage from "../assets/csi_logo_about.png"; // PNG imported as a regu
 
 const AboutCSI = () => {
     return (
-        <section id="about-csi" className="about-csi">
+        <section id="about" className="about-csi">
             {/* SVG in the top right corner */}
             <div className="svg-container-top-right">
                 <TopRightLogo />

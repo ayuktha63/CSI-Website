@@ -17,7 +17,7 @@ const Footer = () => {
             {/* Navigation Links */}
             <nav className="footer-links">
                 <a href="#home">Home</a>
-                <a href="#about-csi">About Us</a>
+                <a href="#about">About Us</a>
                 <a href="#team">Team</a>
                 <a href="#events">Events</a>
                 <a href="#join">Join CSI</a>

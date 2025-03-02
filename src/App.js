@@ -7,6 +7,9 @@ import Home from "./components/Home";
 import EventBox from "./components/EventBox";
 import AboutCSI from "./components/AboutCSI";
 import Footer from "./components/Footer";
+import ImageCarousel from "./components/EventCarousel";
+import BoxCarousel from "./components/EventCarousel";
+import EventCarousel from "./components/EventCarousel";
 
 const App = () => {
   useEffect(() => {
@@ -23,6 +26,7 @@ const App = () => {
         <Home />
         <EventBox />
         <AboutCSI />
+        <EventCarousel />
       </main>
       <Footer />
     </div>

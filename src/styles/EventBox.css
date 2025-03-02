@@ -6,9 +6,7 @@
     padding: 30px 0;
     background: linear-gradient(90deg, #000009 0%, #161616 100%);
     width: 100%;
-    height: auto;
     min-height: 300px;
-    flex-shrink: 0;
     overflow: hidden;
 }
 
@@ -17,70 +15,85 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 35px;
+    gap: 150px;
+    /* Increased gap for better spacing */
     flex-wrap: wrap;
     width: 85%;
     margin-top: 50px;
 }
 
-/* Event Box */
-.box {
+/* Event Image Wrapper */
+.event-item {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border-radius: 12px;
+    overflow: hidden;
     display: flex;
-    width: 100%;
-    max-width: 220px;
-    height: 160px;
-    padding: 35px 20px;
     justify-content: center;
     align-items: center;
-    border-radius: 20px;
-    border: 3px solid #FFF;
-    background: linear-gradient(90deg, #111111 0%, #333333 100%);
-    color: white;
-    font-size: 1.3rem;
-    text-align: center;
-    flex-shrink: 0;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-/* Hover Effect */
-.box:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.3);
+/* Event Image */
+.event-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border-radius: 12px;
+}
+
+/* Text Overlay (Centered, Reduced Width) */
+.event-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0);
+    /* No background */
+    color: #FFFFFF;
+    /* Gold color for contrast */
+    font-weight: bold;
+    padding: 8px 10px;
+    border-radius: 6px;
+    text-align: center;
+    width: 60%;
+    /* Reduced width */
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    line-height: 1.2;
 }
 
 /* 🌍 RESPONSIVENESS */
-@media (max-width: 1200px) {
-    .event-container {
-        gap: 25px;
-    }
-}
-
 @media (max-width: 768px) {
-    .event-box {
-        padding: 25px 0;
+    .event-item {
+        width: 75%;
+        height: 180px;
     }
 
-    .event-container {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .box {
-        width: 85%;
-        padding: 30px 15px;
-        font-size: 1.1rem;
+    .event-text {
+        font-size: 1rem;
+        padding: 6px 10px;
+        width: 50%;
+        /* Further reduced width on smaller screens */
     }
 }
 
 @media (max-width: 480px) {
-    .event-box {
-        padding: 20px 0;
+    .event-item {
+        width: 150px;
+        height: 170px;
     }
 
-    .box {
-        width: 95%;
-        padding: 25px 12px;
-        font-size: 1rem;
-        border-radius: 15px;
+    .event-container {
+        gap: 25px;
+        /* Reduced gap for better layout on small screens */
+    }
+
+    .event-text {
+        font-size: 0.8rem;
+        padding: 4px 8px;
+        width: 45%;
+        /* More compact width */
     }
 }
