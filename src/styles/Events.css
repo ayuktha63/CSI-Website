@@ -1,3 +1,17 @@
+@font-face {
+    font-family: 'Sterion Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Sterion Regular'), url('../styles/Sterion-BLLld.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Iceberg';
+    src: local('Iceberg'), url('../styles/Iceberg-Regular.woff') format('woff');
+    font-style: normal;
+    font-weight: normal;
+}
+
 .eventspage {
     text-align: center;
     padding: 50px 20px;
@@ -21,7 +35,7 @@
     margin-top: 100px;
 }
 
-/* Mouse Icon and Vertical Line */
+/* Mouse Icon, Vertical Line, and Text */
 .mouse-container {
     display: flex;
     flex-direction: column;
@@ -33,25 +47,114 @@
     z-index: 10;
 }
 
-/* Mouse Image */
+.mouse-wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+
+.event-details {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    position: absolute;
+    white-space: nowrap;
+}
+
+/* Responsive Text Alignment */
+.left-text {
+    position: absolute;
+    left: -75vh;
+    width: 400px;
+    top: 200px;
+    font-family: 'Sterion Regular', sans-serif;
+    font-size: 4rem;
+    border-bottom: 2px solid white;
+}
+
+.right-text {
+    left: 400px;
+    top: 350px;
+    transform: translateX(-50%);
+    font-family: 'Iceberg', sans-serif;
+    font-size: 2rem;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Adjustments for Smaller Screens */
+@media (max-width: 768px) {
+    .left-text {
+        left: 10px;
+        top: 150px;
+        width: auto;
+        font-size: 2rem;
+        text-align: left;
+    }
+
+    .right-text {
+        left: 10px;
+        top: 250px;
+        font-size: 1.5rem;
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .date-icon {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+.date-icon {
+    width: 40px;
+    height: 40px;
+}
+
 .centeredimage {
     width: 100px;
     height: auto;
+    position: relative;
+    z-index: 2;
 }
 
-/* Vertical Line - Full Height */
+/* Vertical Line */
 .verticalline {
     width: 2px;
-    /* Line thickness */
     background-color: white;
-    /* Line color */
     position: absolute;
     top: 100%;
-    /* Starts right below the mouse image */
     left: 50%;
     transform: translateX(-50%);
     height: calc(150vh - 35%);
-    /* Extends from mouse to bottom */
+    border-left: 2px dashed white;
+}
+
+/* Small Dot on the Line */
+.line-dot {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.horizontal-line {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    width: 14vw;
+    height: 0;
+    border-top: 3px dashed white;
+    transform: translateY(-50%);
 }
 
 /* Events Section */
@@ -105,44 +208,44 @@
     color: #555;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .centeredimage {
-        width: 80px;
-        top: 40%;
-        margin-top: 200%;
+/* Mobile Styles */
+@media (max-width: 600px) {
+    .eventspage {
+        padding: 30px 10px;
+        min-height: 100vh;
     }
 
-    .verticalline {
-        height: calc(100vh - 40%);
-    }
-
-    .eventscontainer {
-        flex-direction: column;
-        align-items: center;
+    .eventstitle {
+        font-size: 2rem;
     }
 
     .eventcard {
         width: 90%;
     }
-}
 
-@media (max-width: 480px) {
-    .centeredimage {
-        width: 60px;
-        top: 45%;
-        margin-top: 300%;
+    .right-text {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        font-size: 1.2rem;
     }
 
-    .verticalline {
-        height: calc(100vh - 45%);
+    .eventimage {
+        height: 150px;
     }
 
-    .eventspage {
-        padding: 30px 10px;
+    .eventinfo {
+        padding: 10px;
     }
 
-    .eventstitle {
-        font-size: 2rem;
+    .mouse-container {
+        top: 25%;
+    }
+
+    .left-text {
+        font-size: 1.8rem;
+        text-align: center;
+        width: 100%;
+        left: 0;
     }
 }
