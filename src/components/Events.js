@@ -10,11 +10,11 @@ const Events = () => {
     useEffect(() => {
         AOS.init({
             duration: 1000,
-            once: true,
+            once: false,
         });
 
         const handleScroll = () => {
-            setScrollPosition(window.scrollY * 0.5); // Adjust speed by modifying multiplier
+            setScrollPosition(window.scrollY * 0.5);
         };
 
         window.addEventListener("scroll", handleScroll);
@@ -31,11 +31,23 @@ const Events = () => {
                     <img src="/assets/Eventspage_bg.png" alt="EventsBanner" className="eventsimage" />
 
                     <div className="mouse-container">
-                        <div className="event-details left-text" data-aos="fade-up">
+                        <div className="event-details left-text" data-aos="fade-left">
                             AD ASTRA
                         </div>
+                        
+                        <p className="event-description" data-aos="fade-left">
+                            The Department of Computer Science and Engineering, in association with CSI SB MBCET, 
+                            is organizing Ad Astra, a month-long event aimed at enhancing and building a comprehensive 
+                            skill set for every participant.
+                        </p>
 
-                        {/* Moving Mouse Image */}
+                        <button className="read-more-btn" data-aos="fade-left">
+                            <span>Read more</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="25" viewBox="0 0 32 25" fill="none">
+                                <path d="M31.1828 13.5074C31.8313 12.8541 31.8273 11.7989 31.174 11.1504L20.5275 0.583881C19.8741 -0.0645362 18.8189 -0.0605596 18.1705 0.592763C17.522 1.24608 17.526 2.30135 18.1793 2.94977L27.6429 12.3423L18.2504 21.8058C17.602 22.4591 17.606 23.5144 18.2593 24.1628C18.9126 24.8112 19.9679 24.8073 20.6163 24.1539L31.1828 13.5074ZM0.561945 14.111L30.0062 14L29.9936 10.6667L0.549384 10.7777L0.561945 14.111Z" fill="white"/>
+                            </svg>
+                        </button>
+
                         <img
                             src="/assets/mouse.svg"
                             alt="CenteredImage"
