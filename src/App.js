@@ -7,7 +7,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import MainHome from "./components/MainHome"; // Updated import
 import Events from "./components/Events"; // Events page
-
+import Team from "./components/Team";
 const App = () => {
   useEffect(() => {
     AOS.init({
@@ -23,6 +23,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<MainHome />} /> {/* Updated Route */}
           <Route path="/events" element={<Events />} />
+          <Route path="/team" element={<Team />} />
         </Routes>
       </main>
       <Footer />

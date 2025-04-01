@@ -12,7 +12,6 @@
     font-weight: normal;
 }
 
-
 .eventspage {
     text-align: center;
     padding: 50px 20px;
@@ -85,7 +84,7 @@
     border-radius: 16px;
     background: linear-gradient(0deg, #161616 0%, #272727 100%);
     position: absolute;
-    top: 390px; /* Positioned below description */
+    top: 390px;
     left: -75vh;
     border: none;
     cursor: pointer;
@@ -105,14 +104,16 @@
     font-weight: 300;
     line-height: normal;
 }
-.read-more-btn svg{
+
+.read-more-btn svg {
     height: 30px;
     width: 20px;
 }
+
 .read-more-btn:hover {
     background: linear-gradient(0deg, #272727 0%, #161616 100%);
-
 }
+
 /* Responsive Text Alignment */
 .left-text {
     position: absolute;
@@ -134,6 +135,41 @@
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+/* Software event specific styling */
+.software-title {
+    top: 600px; /* Adjusted for spacing from horizontal line */
+    left: 50px; /* On right side */
+    width: 400px;
+    font-family: 'Sterion Regular', sans-serif;
+    font-size: 4rem;
+    border-bottom: 2px solid white;
+}
+
+.software-description {
+    top: 680px;
+    left: 50px; /* On right side */
+    width: 450px;
+    text-align: left;
+}
+
+.software-btn {
+    top: 790px;
+    left: 50px; /* On right side */
+}
+
+.software-date {
+    top: 600px; /* Aligned with software-title */
+    left: -75vh; /* On left side */
+    transform: translateX(0);
+    font-family: 'Iceberg', sans-serif;
+    font-size: 2.5rem;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-bottom: none; /* Remove border-bottom */
 }
 
 /* Adjustments for Smaller Screens */
@@ -175,6 +211,32 @@
         font-size: 1.5rem;
         flex-direction: column;
         text-align: left;
+    }
+
+    /* Software responsive styles */
+    .software-title {
+        top: 550px;
+        left: 10px;
+        font-size: 2rem;
+        width: auto;
+    }
+
+    .software-description {
+        top: 600px;
+        left: 10px;
+        width: 90%;
+    }
+
+    .software-btn {
+        top: 700px;
+        left: 10px;
+    }
+
+    .software-date {
+        top: 780px;
+        left: 10px;
+        font-size: 1.5rem;
+        border-bottom: none; /* Remove border-bottom on mobile */
     }
 
     .date-icon {
@@ -221,13 +283,14 @@
 
 .horizontal-line {
     position: absolute;
-    top: 20%;
+    top: 20%; /* Adjusted previously for spacing */
     left: 50%;
     width: 14vw;
     height: 0;
     border-top: 3px dashed white;
     transform: translateY(-50%);
 }
+
 
 /* Events Section */
 .eventstitle {
