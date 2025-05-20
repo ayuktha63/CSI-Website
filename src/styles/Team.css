@@ -16,7 +16,7 @@
     text-align: center;
     padding: 50px 20px;
     background: #000000;
-    min-height: 100vh;
+    min-height: 620vh;
     color: white;
     position: relative;
 }
@@ -53,13 +53,13 @@
     font-size: 4rem;
     margin-bottom: 20px;
 }
+
 .titles {
     font-family: 'Sterion Regular', sans-serif;
     font-size: 4rem;
-    margin-bottom: 20px;
-    width: 30%; /* Reduced width */
-    margin: 0 auto 20px auto; /* Centered with bottom margin preserved */
-    text-align: center; /* Ensures text inside stays centered */
+    margin: 0 auto 20px auto;
+    width: 30%;
+    text-align: center;
 }
 
 /* Team Description */
@@ -84,6 +84,7 @@
     border: 2.424px solid #FFFFFF;
     background: linear-gradient(180deg, #05050B 0%, #19191A 100%);
     padding: 20px;
+    margin-right: 20px;
     width: 250px;
     text-align: center;
     transition: transform 0.3s ease-in-out;
@@ -98,11 +99,11 @@
 
 /* Member Image */
 .member-image {
-    width: 150px; /* Reduced and set to square */
-    height: 150px; /* Matching width for 1:1 ratio */
+    width: 150px;
+    height: 150px;
     object-fit: cover;
     border-radius: 8px;
-    margin: 0 auto 15px auto; /* Centered with margin-bottom */
+    margin: 0 auto 15px auto;
 }
 
 /* Member Name */
@@ -132,9 +133,8 @@
 .social-btn {
     width: 40px;
     height: 40px;
-    border-radius: 121.183px;
-    background: var(--Black, #252525);  
     border-radius: 50%;
+    background: var(--Black, #252525);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -160,10 +160,16 @@
     height: 20px;
 }
 
-/* Responsive Adjustments */
-@media (max-width: 768px) {
+/* Responsive Adjustments for Tablets and Mobile */
+@media (max-width: 1024px) {
     .team-title {
-        font-size: 2.5rem;
+        font-size: 3rem;
+    }
+
+    .titles {
+        font-size: 3rem;
+        width: 50%; /* Wider for better readability */
+        margin: 30px auto;
     }
 
     .team-description {
@@ -171,21 +177,34 @@
         max-width: 90%;
     }
 
+    .team-content {
+        padding-top: 120px;
+    }
+
+    .team-members {
+        flex-direction: column; /* Stack vertically for tablets */
+        align-items: center;
+        gap: 20px;
+    }
+
     .member-card {
-        width: 200px;
+        width: 80%;
+        max-width: 300px; /* Cap width for larger tablets */
+        margin-right: 0; /* Remove margin-right for centered layout */
+        padding: 15px;
     }
 
     .member-image {
-        width: 120px; /* Reduced and square */
-        height: 120px; /* Matching width for 1:1 ratio */
+        width: 130px;
+        height: 130px;
     }
 
     .member-name {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
 
-    .team-content {
-        padding-top: 100px;
+    .member-role {
+        font-size: 0.9rem;
     }
 
     .social-btn {
@@ -197,19 +216,186 @@
         width: 18px;
         height: 18px;
     }
+
+    .image-container {
+        height: 80vh; /* Reduced for tablets */
+    }
 }
 
-@media (max-width: 600px) {
-    .teampage {
-        padding: 30px 10px;
+@media (max-width: 768px) {
+    .team-title {
+        font-size: 2.5rem;
+    }
+
+    .titles {
+        font-size: 2.5rem;
+        width: 80%;
+        margin: 25px auto;
+    }
+
+    .team-description {
+        font-size: 0.9rem;
+        max-width: 95%;
+    }
+
+    .team-content {
+        padding-top: 100px;
     }
 
     .member-card {
         width: 90%;
+        max-width: 250px;
+        padding: 12px;
     }
 
     .member-image {
-        width: 150px; /* Consistent with desktop size on very small screens */
-        height: 150px; /* Matching width for 1:1 ratio */
+        width: 120px;
+        height: 120px;
+    }
+
+    .member-name {
+        font-size: 1.2rem;
+    }
+
+    .member-role {
+        font-size: 0.85rem;
+    }
+
+    .social-links {
+        gap: 10px;
+    }
+
+    .social-btn {
+        width: 32px;
+        height: 32px;
+    }
+
+    .social-icon {
+        width: 16px;
+        height: 16px;
+    }
+
+    .image-container {
+        height: 60vh;
+    }
+}
+
+@media (max-width: 600px) {
+    .teampage {
+        padding: 20px 10px; /* Tighter padding for mobile */
+        height: 980vh;
+    }
+
+    .team-title {
+        font-size: 2rem;
+    }
+
+    .titles {
+        font-size: 2rem;
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .team-description {
+        font-size: 0.85rem;
+        max-width: 100%;
+    }
+
+    .team-content {
+        padding-top: 80px;
+    }
+
+    .member-card {
+        width: 95%;
+        max-width: 220px;
+        padding: 10px;
+    }
+
+    .member-image {
+        width: 100px;
+        height: 100px;
+    }
+
+    .member-name {
+        font-size: 1.1rem;
+    }
+
+    .member-role {
+        font-size: 0.8rem;
+    }
+
+    .social-links {
+        gap: 8px;
+    }
+
+    .social-btn {
+        width: 30px;
+        height: 30px;
+    }
+
+    .social-icon {
+        width: 14px;
+        height: 14px;
+    }
+
+    .image-container {
+        height: 50vh;
+    }
+}
+
+@media (max-width: 400px) {
+    .team-title {
+        font-size: 1.8rem;
+    }
+
+    .titles {
+        font-size: 1.8rem;
+        width: 95%;
+        margin: 15px auto;
+    }
+
+    .team-description {
+        font-size: 0.8rem;
+    }
+
+    .team-content {
+        padding-top: 60px;
+    }
+
+    .member-card {
+        width: 95%;
+        max-width: 200px;
+        padding: 8px;
+    }
+
+    .member-image {
+        width: 90px;
+        height: 90px;
+    }
+
+    .member-name {
+        font-size: 1rem;
+    }
+
+    .member-role {
+        font-size: 0.75rem;
+    }
+
+    .social-links {
+        gap: 6px;
+    }
+
+    .social-btn {
+        width: 28px;
+        height: 28px;
+    }
+
+    .social-icon {
+        width: 12px;
+        height: 12px;
+    }
+
+    .image-container {
+        height: 40vh;
     }
 }
