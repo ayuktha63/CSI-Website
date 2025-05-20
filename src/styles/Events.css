@@ -121,7 +121,7 @@
     background: linear-gradient(0deg, #161616 0%, #272727 100%);
     position: absolute;
     top: 690px; /* Reduced from 790px */
-    left: 50px; /* On right side */
+    left: 470px; /* On right side */
     border: none;
     cursor: pointer;
     display: flex;
@@ -159,6 +159,17 @@
     font-family: 'Sterion Regular', sans-serif;
     font-size: 4rem;
     border-bottom: 2px solid white;
+}
+.left-text-odd{
+    right: 250px;
+    top: 590px; /* Reduced from 350px */
+    transform: translateX(-50%);
+    font-family: 'Iceberg', sans-serif;
+    font-size: 2.5rem;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .right-text {
@@ -233,10 +244,11 @@
     left: 470px;
 }
 
-.left-text:nth-child(16) { /* Targets MOTIVATIONAL date (23 June 2024) */
+.left-text-odd:nth-child(16) { /* Targets MOTIVATIONAL date (23 June 2024) */
     top: 1450px; /* Reduced from 1550px */
     border-bottom: none; /* Remove border-bottom */
 }
+
 
 /* Horizontal lines for each event */
 .horizontal-line {
@@ -251,12 +263,12 @@
 
 .software-horizontal-line {
     position: absolute;
-    top: 550px; /* Reduced from 650px, aligned with SOFTWARE title */
-    left: 50%;
+    top: 470px; /* Reduced from 650px, aligned with SOFTWARE title */
+    right: 50%;
     width: 14vw;
     height: 0;
     border-top: 3px dashed white;
-    transform: translateY(-50%);
+    transform: translateY(50%);
 }
 
 .radiance-horizontal-line {
@@ -271,12 +283,12 @@
 
 .motivational-horizontal-line {
     position: absolute;
-    top: 1450px; /* Reduced from 1550px, aligned with MOTIVATIONAL title */
-    left: 50%;
+    top: 1330px; /* Reduced from 1550px, aligned with MOTIVATIONAL title */
+    right: 50%;
     width: 14vw;
     height: 0;
     border-top: 3px dashed white;
-    transform: translateY(-50%);
+    transform: translate(50%);
 }
 
 /* Adjustments for Smaller Screens */
@@ -447,7 +459,7 @@
     top: 100%;
     left: 50%;
     transform: translateX(-50%);
-    height: calc(250vh - 20%); /* Adjusted to match new top position of mouse-container */
+    height: calc(210vh - 20%); /* Adjusted to match new top position of mouse-container */
     border-left: 2px dashed white;
 }
 
@@ -458,7 +470,7 @@
     background-color: white;
     border-radius: 50%;
     position: absolute;
-    top: 5.25%;
+    top: 6.25%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
