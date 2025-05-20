@@ -12,27 +12,26 @@
     font-weight: normal;
 }
 
+.events-heading-container {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.events-heading {
+    font-family: 'Sterion Regular', sans-serif;
+    font-size: 250px;
+    color: #ffffff;
+    letter-spacing: 4px;
+}
+
 .eventspage {
     text-align: center;
     padding: 50px 20px;
     background: #000000;
-    min-height: 200vh;
+    min-height: 300vh;
     color: white;
     position: relative;
-}
-
-/* Image Container */
-.image-container {
-    position: relative;
-    width: 100%;
-}
-
-/* Background Image */
-.eventsimage {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    margin-top: 100px;
 }
 
 /* Mouse Icon, Vertical Line, and Text */
@@ -41,19 +40,10 @@
     flex-direction: column;
     align-items: center;
     position: absolute;
-    top: 35%;
+    top: 28%; /* Reduced from 35% to bring the vertical line closer to the heading */
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 10;
-}
-
-.mouse-wrapper {
-    display: flex;
-    align-items: center;
-    position: relative;
-    width: 100%;
-    justify-content: center;
-    text-align: center;
 }
 
 .event-details {
@@ -70,10 +60,22 @@
     font-size: 1rem;
     font-family: sans-serif;
     position: absolute;
-    top: 280px;
+    top: 180px; /* Reduced from 280px */
     left: -75vh;
     width: 450px;
     text-align: left;
+}
+
+/* Software and Motivational description styling */
+.software-description {
+    color: white;
+    font-size: 1rem;
+    font-family: sans-serif;
+    position: absolute;
+    top: 580px; /* Reduced from 680px */
+    left: 225px; /* On right side */
+    width: 450px;
+    text-align: right;
 }
 
 /* Button styling */
@@ -84,7 +86,23 @@
     border-radius: 16px;
     background: linear-gradient(0deg, #161616 0%, #272727 100%);
     position: absolute;
-    top: 390px;
+    top: 290px; /* Reduced from 390px */
+    left: -75vh;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.read-more-btn-odd{
+        width: 200px;
+    height: 60px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    background: linear-gradient(0deg, #161616 0%, #272727 100%);
+    position: absolute;
+    top: 290px; /* Reduced from 390px */
     left: -75vh;
     border: none;
     cursor: pointer;
@@ -94,7 +112,25 @@
     gap: 10px;
 }
 
-.read-more-btn span {
+/* Software and Motivational button styling */
+.software-btn {
+    width: 200px;
+    height: 60px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    background: linear-gradient(0deg, #161616 0%, #272727 100%);
+    position: absolute;
+    top: 690px; /* Reduced from 790px */
+    left: 50px; /* On right side */
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.read-more-btn span, .software-btn span {
     color: #FFF;
     -webkit-text-stroke-width: 0.89px;
     -webkit-text-stroke-color: #FFF;
@@ -105,12 +141,12 @@
     line-height: normal;
 }
 
-.read-more-btn svg {
+.read-more-btn svg, .software-btn svg {
     height: 30px;
     width: 20px;
 }
 
-.read-more-btn:hover {
+.read-more-btn:hover, .software-btn:hover {
     background: linear-gradient(0deg, #272727 0%, #161616 100%);
 }
 
@@ -119,7 +155,7 @@
     position: absolute;
     left: -75vh;
     width: 400px;
-    top: 200px;
+    top: 100px; /* Reduced from 200px */
     font-family: 'Sterion Regular', sans-serif;
     font-size: 4rem;
     border-bottom: 2px solid white;
@@ -127,7 +163,7 @@
 
 .right-text {
     left: 250px;
-    top: 350px;
+    top: 225px; /* Reduced from 350px */
     transform: translateX(-50%);
     font-family: 'Iceberg', sans-serif;
     font-size: 2.5rem;
@@ -136,47 +172,118 @@
     align-items: center;
     gap: 10px;
 }
-
-/* Software event specific styling */
-.software-title {
-    top: 600px; /* Adjusted for spacing from horizontal line */
-    left: 50px; /* On right side */
+.right-text-odd{
+    left: 225px;
+    top: 550px;
     width: 400px;
+    /* top: 200px; Reduced from 200px */
     font-family: 'Sterion Regular', sans-serif;
     font-size: 4rem;
     border-bottom: 2px solid white;
 }
 
-.software-description {
-    top: 680px;
-    left: 50px; /* On right side */
-    width: 450px;
-    text-align: left;
+.right-text-odd-moti{
+    left: 200px;
+    top: 1425px;
+    width: 400px;
+    /* top: 200px; Reduced from 200px */
+    font-family: 'Sterion Regular', sans-serif;
+    font-size: 3.6rem;
+    border-bottom: 2px solid white;
 }
 
-.software-btn {
-    top: 790px;
-    left: 50px; /* On right side */
+/* Software event specific styling */
+.right-text:nth-child(5) { /* Targets SOFTWARE title */
+    top: 550px; /* Reduced from 650px */
 }
 
-.software-date {
-    top: 600px; /* Aligned with software-title */
-    left: -75vh; /* On left side */
-    transform: translateX(0);
-    font-family: 'Iceberg', sans-serif;
-    font-size: 2.5rem;
-    white-space: nowrap;
-    display: flex;
-    align-items: center;
-    gap: 10px;
+.left-text:nth-child(8) { /* Targets SOFTWARE date (09 November 2024) */
+    top: 550px; /* Reduced from 650px */
     border-bottom: none; /* Remove border-bottom */
+}
+
+/* Radiance event specific styling */
+.left-text:nth-child(9) { /* Targets RADIANCE title */
+    top: 1000px; /* Reduced from 1100px */
+}
+
+.event-description:nth-child(10) { /* Targets RADIANCE description */
+    top: 1080px; /* Reduced from 1180px */
+}
+
+.read-more-btn:nth-child(11) { /* Targets RADIANCE button */
+    top: 1190px; /* Reduced from 1290px */
+}
+
+.right-text:nth-child(12) { /* Targets RADIANCE date (28 September 2024) */
+    top: 1125px; /* Reduced from 1250px */
+}
+
+/* Motivational event specific styling */
+/* .right-text-odd:nth-child(13) { Targets MOTIVATIONAL title */
+    /* top: 1425px; Reduced from 1550px */
+/* } */
+
+.software-description:nth-child(14) { /* Targets MOTIVATIONAL description */
+    top: 1480px; /* Reduced from 1580px */
+}
+
+.software-btn:nth-child(15) { /* Targets MOTIVATIONAL button */
+    top: 1605px; /* Reduced from 1690px */
+    left: 470px;
+}
+
+.left-text:nth-child(16) { /* Targets MOTIVATIONAL date (23 June 2024) */
+    top: 1450px; /* Reduced from 1550px */
+    border-bottom: none; /* Remove border-bottom */
+}
+
+/* Horizontal lines for each event */
+.horizontal-line {
+    position: absolute;
+    top: 100px; /* Reduced from 200px, aligned with AD ASTRA title */
+    left: 50%;
+    width: 14vw;
+    height: 0;
+    border-top: 3px dashed white;
+    transform: translateY(-50%);
+}
+
+.software-horizontal-line {
+    position: absolute;
+    top: 550px; /* Reduced from 650px, aligned with SOFTWARE title */
+    left: 50%;
+    width: 14vw;
+    height: 0;
+    border-top: 3px dashed white;
+    transform: translateY(-50%);
+}
+
+.radiance-horizontal-line {
+    position: absolute;
+    top: 1000px; /* Reduced from 1100px, aligned with RADIANCE title */
+    left: 50%;
+    width: 14vw;
+    height: 0;
+    border-top: 3px dashed white;
+    transform: translateY(-50%);
+}
+
+.motivational-horizontal-line {
+    position: absolute;
+    top: 1450px; /* Reduced from 1550px, aligned with MOTIVATIONAL title */
+    left: 50%;
+    width: 14vw;
+    height: 0;
+    border-top: 3px dashed white;
+    transform: translateY(-50%);
 }
 
 /* Adjustments for Smaller Screens */
 @media (max-width: 768px) {
     .left-text {
         left: 10px;
-        top: 150px;
+        top: 100px; /* Reduced from 150px */
         width: auto;
         font-size: 2rem;
         text-align: left;
@@ -184,14 +291,14 @@
 
     .event-description {
         left: 10px;
-        top: 200px;
+        top: 150px; /* Reduced from 200px */
         width: 90%;
         font-size: 0.9rem;
     }
 
     .read-more-btn {
         left: 10px;
-        top: 300px;
+        top: 250px; /* Reduced from 300px */
         width: 200px;
         height: 60px;
     }
@@ -207,36 +314,111 @@
 
     .right-text {
         left: 10px;
-        top: 380px;
+        top: 330px; /* Reduced from 380px */
         font-size: 1.5rem;
         flex-direction: column;
         text-align: left;
     }
 
     /* Software responsive styles */
-    .software-title {
-        top: 550px;
+    .right-text:nth-child(5) { /* SOFTWARE title on mobile */
+        top: 500px; /* Reduced from 550px */
         left: 10px;
         font-size: 2rem;
         width: auto;
     }
 
     .software-description {
-        top: 600px;
+        top: 550px; /* Reduced from 600px */
         left: 10px;
         width: 90%;
     }
 
     .software-btn {
-        top: 700px;
+        top: 650px; /* Reduced from 700px */
         left: 10px;
     }
 
-    .software-date {
-        top: 780px;
+    .left-text:nth-child(8) { /* SOFTWARE date on mobile */
+        top: 730px; /* Reduced from 780px */
         left: 10px;
         font-size: 1.5rem;
-        border-bottom: none; /* Remove border-bottom on mobile */
+        border-bottom: none;
+    }
+
+    .software-horizontal-line {
+        top: 500px; /* Reduced from 550px, aligned with SOFTWARE title on mobile */
+        left: 50%;
+        width: 50%;
+        border-top: 3px dashed white;
+        transform: translateY(-50%);
+    }
+
+    /* Radiance responsive styles */
+    .left-text:nth-child(9) { /* RADIANCE title on mobile */
+        top: 900px; /* Reduced from 950px */
+        left: 10px;
+        font-size: 2rem;
+        width: auto;
+    }
+
+    .event-description:nth-child(10) { /* RADIANCE description on mobile */
+        top: 950px; /* Reduced from 1000px */
+        left: 10px;
+        width: 90%;
+    }
+
+    .read-more-btn:nth-child(11) { /* RADIANCE button on mobile */
+        top: 1050px; /* Reduced from 1100px */
+        left: 10px;
+    }
+
+    .right-text:nth-child(12) { /* RADIANCE date on mobile */
+        top: 1130px; /* Reduced from 1180px */
+        left: 10px;
+        font-size: 1.5rem;
+    }
+
+    .radiance-horizontal-line {
+        top: 900px; /* Reduced from 950px, aligned with RADIANCE title on mobile */
+        left: 50%;
+        width: 50%;
+        border-top: 3px dashed white;
+        transform: translateY(-50%);
+    }
+
+    /* Motivational responsive styles */
+    .right-text:nth-child(13) { /* MOTIVATIONAL title on mobile */
+        top: 1300px; /* Reduced from 1350px */
+        left: 10px;
+        font-size: 2rem;
+        width: auto;
+    }
+
+    .software-description:nth-child(14) { /* MOTIVATIONAL description on mobile */
+        top: 1350px; /* Reduced from 1400px */
+        left: 10px;
+        width: 90%;
+    }
+
+    .software-btn:nth-child(15) { /* MOTIVATIONAL button on mobile */
+        top: 1450px; /* Reduced from 1500px */
+        left: 10px;
+    }
+
+    .left-text:nth-child(16) { /* MOTIVATIONAL date on mobile */
+        top: 1530px; /* Reduced from 1580px */
+        left: 10px;
+        font-size: 1.5rem;
+        border-bottom: none;
+    }
+
+    .motivational-horizontal-line {
+        top: 1300px; /* Reduced from 1350px, aligned with MOTIVATIONAL title on mobile */
+        left: 50%;
+        width: 50%;
+        border-top: 3px dashed white;
+        transform: translateY(-50%);
     }
 
     .date-icon {
@@ -265,7 +447,7 @@
     top: 100%;
     left: 50%;
     transform: translateX(-50%);
-    height: calc(150vh - 35%);
+    height: calc(250vh - 20%); /* Adjusted to match new top position of mouse-container */
     border-left: 2px dashed white;
 }
 
@@ -276,21 +458,10 @@
     background-color: white;
     border-radius: 50%;
     position: absolute;
-    top: 20%;
+    top: 5.25%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
-.horizontal-line {
-    position: absolute;
-    top: 20%; /* Adjusted previously for spacing */
-    left: 50%;
-    width: 14vw;
-    height: 0;
-    border-top: 3px dashed white;
-    transform: translateY(-50%);
-}
-
 
 /* Events Section */
 .eventstitle {
@@ -347,7 +518,7 @@
 @media (max-width: 600px) {
     .eventspage {
         padding: 30px 10px;
-        min-height: 100vh;
+        min-height: 200vh;
     }
 
     .eventstitle {
@@ -374,7 +545,7 @@
     }
 
     .mouse-container {
-        top: 25%;
+        top: 15%; /* Reduced from 25% for mobile */
     }
 
     .left-text {
