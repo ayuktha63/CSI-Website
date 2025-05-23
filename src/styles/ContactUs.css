@@ -111,6 +111,9 @@
     flex-direction: column;
   }
 
+  .contact-heading{
+    font-size: 1.5rem;
+  }
   .contact-left,
   .contact-right {
     padding: 25px;
