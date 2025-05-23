@@ -6,7 +6,7 @@
   margin-top: 60px;
   overflow: hidden;
 }
-.about-csi-content{
+.about-csi-contents{
     margin-top: 10%;
 }
 .mission-bg {
@@ -36,6 +36,7 @@
     font-size: 3rem;
     margin-bottom: 20px;
     font-weight: bold;
+    max-width: 400px;
     letter-spacing: 2px;
 }
 

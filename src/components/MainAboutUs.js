@@ -11,7 +11,7 @@ const About = () => {
         {/* Optional: insert SVG here if needed */}
       </div>
 
-      <div className="about-csi-content">
+      <div className="about-csi-contents"data-aos="fade-up">
         {/* Image Row */}
         <div className="about-csi-images">
           <img src={leftImage} alt="Left" className="about-csi-image left" />
@@ -28,7 +28,7 @@ const About = () => {
       </div>
 
       {/* Mission Section */}
-      <div className="mission-section">
+      <div className="mission-section" data-aos="fade-up">
         <img src={missionImage} alt="Our Mission" className="mission-bg" />
         <div className="mission-overlay">
           <h2 className="mission-heading">OUR MISSION</h2>
@@ -57,7 +57,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className="mission-section">
+      <div className="mission-section" data-aos="fade-up">
         <img src={missionImage} alt="Our Mission" className="mission-bg" />
         <div className="mission-overlay">
           <h2 className="mission-heading">What We Stand For</h2>
@@ -80,7 +80,7 @@ const About = () => {
           </ul>
         </div>
       </div>
-      <div className="mission-section">
+      <div className="mission-section" data-aos="fade-up">
         <img src={missionImage} alt="Our Mission" className="mission-bg" />
         <div className="mission-overlay">
           <h2 className="mission-heading">Why JOIN CSI</h2>
