@@ -1,0 +1,61 @@
+/* 🌟 MISSION SECTION */
+.mission-section {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-top: 60px;
+  overflow: hidden;
+}
+.about-csi-content{
+    margin-top: 10%;
+}
+.mission-bg {
+  width: 65%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.4;
+}
+
+.mission-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.mission-heading {
+    font-family: 'Sterion Regular', sans-serif;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.mission-list {
+  list-style-type: disc;
+  max-width: 800px;
+  text-align: left;
+  font-size: 1.0rem;
+  line-height: 1.8;
+  padding-left: 20px;
+}
+
+/* ✅ Responsive tweaks */
+@media (max-width: 768px) {
+  .mission-heading {
+    font-size: 1.6rem;
+  }
+
+  .mission-list {
+    font-size: 1rem;
+    padding-left: 15px;
+  }
+}

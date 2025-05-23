@@ -46,7 +46,8 @@ const Header = () => {
                         <li><Link to="/">Home</Link></li>
                         <li><Link to="/events">Events</Link></li>
                         <li><Link to="/team">Team</Link></li>
-                        <li><a href="#about" onClick={(e) => { e.preventDefault(); handleScrollToSection("about"); }}>About Us</a></li>
+                        <li><Link to="/about">About Us</Link></li>
+                        {/* <li><a href="#about" onClick={(e) => { e.preventDefault(); handleScrollToSection("about"); }}>About Us</a></li> */}
                         <li><a href="#join" className="join-btn" onClick={(e) => { e.preventDefault(); handleScrollToSection("join"); }}>Join CSI</a></li>
                     </ul>
                 </nav>

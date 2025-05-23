@@ -10,6 +10,7 @@ import Events from "./components/Events"; // Events page
 import Team from "./components/Team";
 import Adastra from "./components/Adastra"; // Ad Astra event details
 import Software from "./components/Software";
+import MainAboutUs from "./components/MainAboutUs"; // About Us page
 const App = () => {
   useEffect(() => {
     AOS.init({
@@ -29,6 +30,7 @@ const App = () => {
           <Route path="/team" element={<Team />} />
            <Route path="/adastra" element={<Adastra />} />
           <Route path ="/software" element={<Software />} />
+          <Route path="/about" element={<MainAboutUs />} /> {/* Updated Route */}
         </Routes>
       </main>
       <Footer />
