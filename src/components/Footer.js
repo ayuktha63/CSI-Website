@@ -2,7 +2,6 @@ import React from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom"; // Import hooks for navigation
 import "../styles/Footer.css"; // Import CSS
 import logo from "../assets/csi_logo_about.png"; // Ensure logo is in assets folder
-
 // Importing local icons from Vector folder
 import instaIcon from "../Vector/instagram.svg";
 import discordIcon from "../Vector/discord.svg";
@@ -12,7 +11,7 @@ import linkedinIcon from "../Vector/Linkedin.svg";
 const Footer = () => {
     const location = useLocation();
     const navigate = useNavigate();
-
+    //eslint-disable-next-line
     const handleScrollToSection = (sectionId) => {
         if (location.pathname !== "/") {
             navigate("/");
