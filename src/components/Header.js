@@ -47,7 +47,6 @@ const Header = () => {
                         <li><Link to="/events">Events</Link></li>
                         <li><Link to="/team">Team</Link></li>
                         <li><Link to="/about">About Us</Link></li>
-                        {/* <li><a href="#about" onClick={(e) => { e.preventDefault(); handleScrollToSection("about"); }}>About Us</a></li> */}
                         <li><a href="#join" className="join-btn" onClick={(e) => { e.preventDefault(); handleScrollToSection("join"); }}>Join CSI</a></li>
                     </ul>
                 </nav>
@@ -70,7 +69,7 @@ const Header = () => {
                             <li><Link to="/" onClick={() => setMenuOpen(false)}>Home</Link></li>
                             <li><Link to="/events" onClick={() => setMenuOpen(false)}>Events</Link></li>
                             <li><Link to="/team" onClick={() => setMenuOpen(false)}>Team</Link></li>
-                            <li><a href="#about" onClick={(e) => { e.preventDefault(); handleScrollToSection("about"); }}>About</a></li>
+                            <li><Link to="/about" onClick={() => setMenuOpen(false)}>About Us</Link></li>
                             <li><a href="#join" className="join-btn" onClick={(e) => { e.preventDefault(); handleScrollToSection("join"); }}>Join CSI</a></li>
                         </ul>
                     </nav>

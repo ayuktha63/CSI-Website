@@ -32,11 +32,10 @@ const Footer = () => {
             {/* Navigation Links */}
             <nav className="footer-links">
                 <Link to="/">Home</Link>
-                <a href="#about" onClick={(e) => { e.preventDefault(); handleScrollToSection("about"); }}>About Us</a>
+                <Link to="/about">About Us</Link>
                 <Link to="/team">Team</Link>
                 <Link to="/events">Events</Link>
                 <Link to="/contactus">Contact Us</Link>
-                {/* <a href="#join" onClick={(e) => { e.preventDefault(); handleScrollToSection("join"); }}>Contact Us</a> */}
             </nav>
 
             {/* Social Media Icons */}
