@@ -21,7 +21,7 @@ const Team = () => {
                     <div className="team-content">
                         <h1 className="team-title" data-aos="fade-up">Our Team</h1>
                         <p className="team-description" data-aos="fade-up">
-                            Meet the dedicated individuals who make our organization thrive.
+                            Meet the dedicated individuals <br></br>who make our organization thrive.
                         </p>
                         <div className="team-members" data-aos="fade-up">
                             {/* Team Member 1 */}

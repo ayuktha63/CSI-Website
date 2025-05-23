@@ -31,8 +31,8 @@
 /* Background Image */
 .teamimage {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: fit-content;
+    /* object-fit: cover; */
     position: absolute;
     top: 0;
     left: 0;
