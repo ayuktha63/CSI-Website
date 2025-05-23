@@ -171,7 +171,9 @@
         width: 50%; /* Wider for better readability */
         margin: 30px auto;
     }
-
+    .teamimage{
+        object-fit: cover;
+    }
     .team-description {
         font-size: 1rem;
         max-width: 90%;
@@ -227,6 +229,9 @@
         font-size: 2.5rem;
     }
 
+    .teamimage{
+        object-fit: cover;
+    }
     .titles {
         font-size: 2.5rem;
         width: 80%;
@@ -286,6 +291,9 @@
         height: 980vh;
     }
 
+    .teamimage{
+        object-fit: cover;
+    }
     .team-title {
         font-size: 2rem;
     }
