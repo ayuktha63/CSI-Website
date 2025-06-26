@@ -1,3 +1,13 @@
+/* Ensure no horizontal scrolling globally */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
 @font-face {
     font-family: 'Sterion Regular';
     font-style: normal;
@@ -11,35 +21,39 @@
     font-style: normal;
     font-weight: normal;
 }
+
 .thecreative,
-.theevent{
+.theevent {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-
 }
+
 .thecore,
 .thetech,
-.themarket{
+.themarket {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
+
 .members-card,
-.members-card-tech{
+.members-card-tech {
     display: flex;
     flex-direction: row;
-    gap:25px;
+    gap: 25px;
 }
+
 .titles-creative,
-.titles-event{
+.titles-event {
     font-family: 'Sterion Regular', sans-serif;
     font-size: 4rem;
     margin: 0 auto 20px auto;
     width: 30%;
     text-align: right;
 }
-.titles-market{
+
+.titles-market {
     font-family: 'Sterion Regular', sans-serif;
     font-size: 4rem;
     margin: 0 auto 20px 0;
@@ -47,19 +61,21 @@
     text-align: left;
 }
 
-.titles-tech{
+.titles-tech {
     font-family: 'Sterion Regular', sans-serif;
     font-size: 4rem;
     margin: 0 auto 20px 0;
     width: 30%;
     text-align: left;
 }
-.members-card-creative{
+
+.members-card-creative {
     display: flex;
-    gap:25px;
+    gap: 25px;
     width: 100%;
     flex-direction: row;
 }
+
 .teampage {
     text-align: center;
     padding: 50px 20px;
@@ -67,6 +83,7 @@
     min-height: 620vh;
     color: white;
     position: relative;
+    width: 100%;
 }
 
 /* Image Container */
@@ -80,7 +97,6 @@
 .teamimage {
     width: 100%;
     height: fit-content;
-    /* object-fit: cover; */
     position: absolute;
     top: 0;
     left: 0;
@@ -109,14 +125,15 @@
     width: 30%;
     text-align: center;
 }
-.titles-core{
+
+.titles-core {
     padding-left: 30px;
     font-family: 'Sterion Regular', sans-serif;
     font-size: 4rem;
     margin: 0 auto 20px auto;
-    /* width: 30%; */
     text-align: center;
 }
+
 /* Team Description */
 .team-description {
     font-family: sans-serif;
@@ -216,241 +233,93 @@
     height: 20px;
 }
 
-/* Responsive Adjustments for Tablets and Mobile */
-@media (max-width: 1024px) {
-    .team-title {
-        font-size: 3rem;
+/* Mobile Responsive Styles */
+@media screen and (max-width: 768px) {
+    .thecreative,
+    .theevent,
+    .thecore,
+    .thetech,
+    .themarket {
+        align-items: center;
+        width: 100%;
+        padding: 0 10px;
     }
 
-    .titles {
-        font-size: 3rem;
-        width: 50%; /* Wider for better readability */
-        margin: 30px auto;
-    }
-    .team-description {
-        font-size: 1rem;
-        max-width: 90%;
+    .members-card,
+    .members-card-tech,
+    .members-card-creative {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        width: 100%;
+        max-width: 100%;
+        padding: 0 10px;
     }
 
-    .team-content {
-        padding-top: 120px;
+    .titles-creative,
+    .titles-event,
+    .titles-market,
+    .titles-tech,
+    .titles,
+    .titles-core {
+        width: 100%;
+        max-width: 100%;
+        font-size: 2rem;
+        text-align: center;
+        margin: 0 auto 10px auto;
+        padding: 0 10px;
     }
 
     .team-members {
-        flex-direction: column; /* Stack vertically for tablets */
-        align-items: center;
-        gap: 20px;
+        /* flex-direction: column; */
+        /* align-items: center; */
+        padding: 0;
+        gap: 15px;
+        width: 100%;
+        max-width: 100%;
     }
 
     .member-card {
-        width: 80%;
-        max-width: 300px; /* Cap width for larger tablets */
-        margin-right: 0; /* Remove margin-right for centered layout */
+        margin: 0 auto;
+        width: 250px; /* Same width as desktop */
         padding: 15px;
     }
 
-    .member-image {
-        width: 130px;
-        height: 130px;
-    }
-
-    .member-name {
-        font-size: 1.3rem;
-    }
-
-    .member-role {
-        font-size: 0.9rem;
-    }
-
-    .social-btn {
-        width: 35px;
-        height: 35px;
-    }
-
-    .social-icon {
-        width: 18px;
-        height: 18px;
-    }
-
-    .image-container {
-        height: 80vh; /* Reduced for tablets */
-    }
-}
-
-@media (max-width: 768px) {
-    .team-title {
-        font-size: 2.5rem;
-    }
-
-    .titles {
-        font-size: 2.5rem;
-        width: 80%;
-        margin: 25px auto;
-    }
-
-    .team-description {
-        font-size: 0.9rem;
-        max-width: 95%;
-    }
-
-    .team-content {
-        padding-top: 100px;
-    }
-
-    .member-card {
-        width: 90%;
-        max-width: 250px;
-        padding: 12px;
-    }
-
-    .member-image {
-        width: 120px;
-        height: 120px;
-    }
-
-    .member-name {
-        font-size: 1.2rem;
-    }
-
-    .member-role {
-        font-size: 0.85rem;
-    }
-
-    .social-links {
-        gap: 10px;
-    }
-
-    .social-btn {
-        width: 32px;
-        height: 32px;
-    }
-
-    .social-icon {
-        width: 16px;
-        height: 16px;
-    }
-
-    .image-container {
-        height: 60vh;
-    }
-}
-
-@media (max-width: 600px) {
     .teampage {
-        padding: 20px 10px; /* Tighter padding for mobile */
-        height: 980vh;
-    }
-
-    .team-title {
-        font-size: 2rem;
-    }
-
-    .titles {
-        font-size: 2rem;
-        width: 90%;
-        margin: 20px auto;
-    }
-
-    .team-description {
-        font-size: 0.85rem;
+        padding: 20px 10px;
+        min-height: auto;
+        width: 100%;
+        height: 11000px;
         max-width: 100%;
     }
 
     .team-content {
         padding-top: 80px;
+        width: 100%;
+        max-width: 100%;
     }
 
-    .member-card {
-        width: 95%;
-        max-width: 220px;
-        padding: 10px;
-    }
-
-    .member-image {
-        width: 100px;
-        height: 100px;
-    }
-
-    .member-name {
-        font-size: 1.1rem;
-    }
-
-    .member-role {
-        font-size: 0.8rem;
-    }
-
-    .social-links {
-        gap: 8px;
-    }
-
-    .social-btn {
-        width: 30px;
-        height: 30px;
-    }
-
-    .social-icon {
-        width: 14px;
-        height: 14px;
-    }
-
-    .image-container {
-        height: 50vh;
-    }
-}
-
-@media (max-width: 400px) {
     .team-title {
-        font-size: 1.8rem;
-    }
-
-    .titles {
-        font-size: 1.8rem;
-        width: 95%;
-        margin: 15px auto;
+        font-size: 2rem;
+        margin-bottom: 15px;
     }
 
     .team-description {
-        font-size: 0.8rem;
-    }
-
-    .team-content {
-        padding-top: 60px;
-    }
-
-    .member-card {
-        width: 95%;
-        max-width: 200px;
-        padding: 8px;
-    }
-
-    .member-image {
-        width: 90px;
-        height: 90px;
-    }
-
-    .member-name {
-        font-size: 1rem;
-    }
-
-    .member-role {
-        font-size: 0.75rem;
-    }
-
-    .social-links {
-        gap: 6px;
-    }
-
-    .social-btn {
-        width: 28px;
-        height: 28px;
-    }
-
-    .social-icon {
-        width: 12px;
-        height: 12px;
+        font-size: 0.9rem;
+        max-width: 100%;
+        padding: 0 15px;
+        margin: 0 auto 20px;
     }
 
     .image-container {
         height: 40vh;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .teamimage {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
     }
 }
