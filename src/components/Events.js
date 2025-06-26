@@ -83,12 +83,12 @@ const Events = () => {
                         successfully conducted Radiance, an engaging one-day event exclusively for first-year students, 
                         featuring interactive sessions, team activities, and networking opportunities.
                     </p>
-                    <button className="read-more-btn" data-aos="fade-left">
-                        <span>Read more</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="25" viewBox="0 0 32 25" fill="none">
-                            <path d="M31.1828 13.5074C31.8313 12.8541 31.8273 11.7989 31.174 11.1504L20.5275 0.583881C19.8741 -0.0645362 18.8189 -0.0605596 18.1705 0.592763C17.522 1.24608 17.526 2.30135 18.1793 2.94977L27.6429 12.3423L18.2504 21.8058C17.602 22.4591 17.606 23.5144 18.2593 24.1628C18.9126 24.8112 19.9679 24.8073 20.6163 24.1539L31.1828 13.5074ZM0.561945 14.111L30.0062 14L29.9936 10.6667L0.549384 10.7777L0.561945 14.111Z" fill="white"/>
-                        </svg>
-                    </button>
+                    <Link to="/radiance" className="read-more-btn" data-aos="fade-left">
+                    <span>Read more</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="25" viewBox="0 0 32 25" fill="none">
+                        <path d="M31.1828 13.5074C31.8313 12.8541 31.8273 11.7989 31.174 11.1504L20.5275 0.583881C19.8741 -0.0645362 18.8189 -0.0605596 18.1705 0.592763C17.522 1.24608 17.526 2.30135 18.1793 2.94977L27.6429 12.3423L18.2504 21.8058C17.602 22.4591 17.606 23.5144 18.2593 24.1628C18.9126 24.8112 19.9679 24.8073 20.6163 24.1539L31.1828 13.5074ZM0.561945 14.111L30.0062 14L29.9936 10.6667L0.549384 10.7777L0.561945 14.111Z" fill="white"/>
+                    </svg>
+                    </Link>
                     <div className="event-details right-text" data-aos="fade-left">
                         <img src="/assets/calender.svg" alt="Calendar Icon" className="date-icon" />
                         28 September 2024
@@ -103,12 +103,12 @@ const Events = () => {
                         presents a Motivational Talk Session with Dr. Giby Geevarughese, Former Chairperson (2016-2019), 
                         Board of Studies in Education (UG), and Former Member of the University of Kerala.
                     </p>
-                    <button className="software-btn" data-aos="fade-right">
-                        <span>Read more</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="25" viewBox="0 0 32 25" fill="none">
-                            <path d="M31.1828 13.5074C31.8313 12.8541 31.8273 11.7989 31.174 11.1504L20.5275 0.583881C19.8741 -0.0645362 18.8189 -0.0605596 18.1705 0.592763C17.522 1.24608 17.526 2.30135 18.1793 2.94977L27.6429 12.3423L18.2504 21.8058C17.602 22.4591 17.606 23.5144 18.2593 24.1628C18.9126 24.8112 19.9679 24.8073 20.6163 24.1539L31.1828 13.5074ZM0.561945 14.111L30.0062 14L29.9936 10.6667L0.549384 10.7777L0.561945 14.111Z" fill="white"/>
-                        </svg>
-                    </button>
+                    <Link to="/software" className="software-btn" data-aos="fade-left">
+                    <span>Read more</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="25" viewBox="0 0 32 25" fill="none">
+                        <path d="M31.1828 13.5074C31.8313 12.8541 31.8273 11.7989 31.174 11.1504L20.5275 0.583881C19.8741 -0.0645362 18.8189 -0.0605596 18.1705 0.592763C17.522 1.24608 17.526 2.30135 18.1793 2.94977L27.6429 12.3423L18.2504 21.8058C17.602 22.4591 17.606 23.5144 18.2593 24.1628C18.9126 24.8112 19.9679 24.8073 20.6163 24.1539L31.1828 13.5074ZM0.561945 14.111L30.0062 14L29.9936 10.6667L0.549384 10.7777L0.561945 14.111Z" fill="white"/>
+                    </svg>
+                    </Link>
                     <div className="event-details left-text-odd" data-aos="fade-right">
                         <img src="/assets/calender.svg" alt="Calendar Icon" className="date-icon" />
                         23 June 2024

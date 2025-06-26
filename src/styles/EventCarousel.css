@@ -4,6 +4,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    pointer-events: none;
     width: 100%;
     height: 100vh;
     background: #000009;
