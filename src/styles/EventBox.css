@@ -73,7 +73,7 @@
 
     .event-text {
         font-size: 1rem;
-        padding: 6px 10px;
+        padding: 0px 7px;
         width: 50%;
         /* Further reduced width on smaller screens */
     }
@@ -92,7 +92,7 @@
 
     .event-text {
         font-size: 0.8rem;
-        padding: 4px 8px;
+        padding: 0px 8px;
         width: 45%;
         /* More compact width */
     }

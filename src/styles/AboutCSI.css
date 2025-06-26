@@ -26,6 +26,7 @@
 .about-csi-images {
     display: flex;
     align-items: center;
+    padding-top: 50px;
     width: 100%;
     gap: 30px;
     justify-content: space-between;
@@ -60,7 +61,8 @@
     line-height: 1.6;
     opacity: 0.9;
     margin-top: 10px;
-    padding: 0 15px;
+    padding-bottom: 40px;
+    padding: 50 15px;
     text-align: justify;
 }
 
