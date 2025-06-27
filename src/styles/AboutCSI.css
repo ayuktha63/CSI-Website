@@ -61,8 +61,7 @@
     line-height: 1.6;
     opacity: 0.9;
     margin-top: 10px;
-    padding-bottom: 40px;
-    padding: 50 15px;
+    padding: 0 15px 40px 0px;
     text-align: justify;
 }
 
@@ -175,7 +174,7 @@
     .about-csi-text {
         font-size: 1rem;
         line-height: 1.5;
-        padding: 0 10px;
+        padding: 40 40px;
     }
 
     .svg-container-top-right {
