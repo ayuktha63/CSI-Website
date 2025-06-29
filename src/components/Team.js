@@ -411,7 +411,7 @@ const Team = () => {
                                     <div className="member-card">
                                         <img src="/assets/afroz.png" alt="Jane Smith" className="member-image" />
                                         <p className="member-name">Mohamed Afroz</p>
-                                        <p className="member-role">Management Co-Lead</p>
+                                        <p className="member-role">Co-Lead</p>
                                         <div className="social-links">
                                             <a href="https://instagram.com/johndoe" target="_blank" rel="noopener noreferrer" className="social-btn instagram">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 27 27" fill="none">
@@ -433,7 +433,7 @@ const Team = () => {
                                     <div className="member-card">
                                         <img src="/assets/sanal.png" alt="Jane Smith" className="member-image" />
                                         <p className="member-name">Sanal Sajan</p>
-                                        <p className="member-role">Management Co-Lead</p>
+                                        <p className="member-role">Co-Lead</p>
                                         <div className="social-links">
                                             <a href="https://instagram.com/johndoe" target="_blank" rel="noopener noreferrer" className="social-btn instagram">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 27 27" fill="none">

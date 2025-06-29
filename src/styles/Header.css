@@ -57,7 +57,7 @@
     text-decoration: none;
     font-size: 1rem;
     transition: color 0.3s;
-    padding: 6px 10px;
+    padding: 8px 10px;
 }
 
 .nav ul li a:hover {
@@ -78,6 +78,7 @@
     display: inline-block;
     width: 120px;
     height: 40px;
+    top: 3px;
     border-radius: 5px;
     font-weight: bold;
     text-align: center;
@@ -85,13 +86,14 @@
     text-decoration: none;
     overflow: hidden;
     background: url('../assets/joinbg.png') no-repeat center center;
-    background-size: cover;
+    background-size: contain;
     transition: transform 0.3s, opacity 0.3s;
 }
 
 .join-btn:hover {
     transform: scale(1.05);
-    opacity: 0.9;
+    background: url('../assets/joinafter.png') no-repeat center center;
+    background-size: contain;
 }
 
 /* Hamburger Menu */

@@ -7,7 +7,7 @@ const About = () => {
   return (
     <section className="about-csi">
       {/* Optional SVGs */}
-      <div className="svg-container-top-right">
+      <div className="svg-container-top-right"x>
         {/* Optional: insert SVG here if needed */}
       </div>
 

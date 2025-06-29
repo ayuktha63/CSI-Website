@@ -9,12 +9,12 @@ const AboutCSI = () => {
     return (
         <section id="about" className="about-csi">
             {/* SVG in the top right corner */}
-            <div className="svg-container-top-right">
+            <div className="svg-container-top-right"data-aos="fade-left">
                 <TopRightLogo />
             </div>
 
             {/* SVG in the bottom left corner */}
-            <div className="svg-container-bottom-left">
+            <div className="svg-container-bottom-left"data-aos="fade-right">
                 <BottomLeftLogo />
             </div>
 
