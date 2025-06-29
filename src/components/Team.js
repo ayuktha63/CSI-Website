@@ -272,7 +272,7 @@ const Team = () => {
                                 <div className="members-card-creative">
                                     <div className="member-card">
                                         <img src="/assets/gaudham.png" alt="Jane Smith" className="member-image" />
-                                        <p className="member-name">Goutham b Cheraman</p>
+                                        <p className="member-name">Goutham B Cheraman</p>
                                         <p className="member-role">Head of Creative Wing</p>
                                         <div className="social-links">
                                             <a href="https://instagram.com/johndoe" target="_blank" rel="noopener noreferrer" className="social-btn instagram">
@@ -385,7 +385,7 @@ const Team = () => {
                             {/* {End of Creative Wing} */}
                             <div className="theevent" data-aos="fade-up">
                                 <div><h1 className="titles-event">EVENT MANAGEMENT</h1></div>
-                                <div className="members-card">
+                                <div className="members-card-creative">
                                     <div className="member-card">
                                         <img src="/assets/sradhya.png" alt="Jane Smith" className="member-image" />
                                         <p className="member-name">Sradhya Renish</p>
@@ -411,7 +411,7 @@ const Team = () => {
                                     <div className="member-card">
                                         <img src="/assets/afroz.png" alt="Jane Smith" className="member-image" />
                                         <p className="member-name">Mohamed Afroz</p>
-                                        <p className="member-role">Co-Lead</p>
+                                        <p className="member-role">Management Co-Lead</p>
                                         <div className="social-links">
                                             <a href="https://instagram.com/johndoe" target="_blank" rel="noopener noreferrer" className="social-btn instagram">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 27 27" fill="none">
@@ -433,7 +433,7 @@ const Team = () => {
                                     <div className="member-card">
                                         <img src="/assets/sanal.png" alt="Jane Smith" className="member-image" />
                                         <p className="member-name">Sanal Sajan</p>
-                                        <p className="member-role">Management</p>
+                                        <p className="member-role">Management Co-Lead</p>
                                         <div className="social-links">
                                             <a href="https://instagram.com/johndoe" target="_blank" rel="noopener noreferrer" className="social-btn instagram">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 27 27" fill="none">
@@ -477,7 +477,7 @@ const Team = () => {
                                     <div className="member-card">
                                         <img src="/assets/nihal.png" alt="Jane Smith" className="member-image" />
                                         <p className="member-name">Nihal Mohammed Sahir</p>
-                                        <p className="member-role">Operations</p>
+                                        <p className="member-role">Event Organizer</p>
                                         <div className="social-links">
                                             <a href="https://instagram.com/johndoe" target="_blank" rel="noopener noreferrer" className="social-btn instagram">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 27 27" fill="none">
@@ -501,7 +501,7 @@ const Team = () => {
                             {/* {End of event management} */}
                             <div className="themarket" data-aos="fade-up">
                                 <div><h1 className="titles-market">Marketing & Publicity</h1></div>
-                                <div className="members-card">
+                                <div className="members-card-creative">
                                     <div className="member-card">
                                         <img src="/assets/shibin.png" alt="Jane Smith" className="member-image" />
                                         <p className="member-name">Shibin S R</p>

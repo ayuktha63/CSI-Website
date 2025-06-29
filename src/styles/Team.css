@@ -22,7 +22,7 @@ body {
     font-weight: normal;
 }
 
-.thecreative,
+.thetech,
 .theevent {
     display: flex;
     flex-direction: column;
@@ -30,7 +30,7 @@ body {
 }
 
 .thecore,
-.thetech,
+.thecreative,
 .themarket {
     display: flex;
     flex-direction: column;
@@ -44,13 +44,20 @@ body {
     gap: 25px;
 }
 
-.titles-creative,
+.titles-creative {
+    font-family: 'Sterion Regular', sans-serif;
+    font-size: 4rem;
+    margin: 0 auto 20px 0;
+    width: 30%;
+    text-align: left;
+}
+
 .titles-event {
     font-family: 'Sterion Regular', sans-serif;
     font-size: 4rem;
-    margin: 0 auto 20px auto;
-    width: 30%;
-    text-align: left;
+    margin: 0 12px 20px auto;
+    width: 70%;
+    text-align: right;
 }
 
 .titles-market {
@@ -64,14 +71,14 @@ body {
 .titles-tech {
     font-family: 'Sterion Regular', sans-serif;
     font-size: 4rem;
-    margin: 0 auto 20px 0;
-    width: 30%;
-    text-align: left;
+    margin: 0 15px 20px auto;
+    width: 70%;
+    text-align: right;
 }
 
 .members-card-creative {
     display: flex;
-    gap: 25px;
+    gap: 5px;
     width: 100%;
     flex-direction: row;
 }
@@ -80,7 +87,7 @@ body {
     text-align: center;
     padding: 50px 20px;
     background: #000000;
-    min-height: 670vh;
+    min-height: 540vh;
     color: white;
     position: relative;
     width: 100%;
@@ -119,7 +126,7 @@ body {
 .team-title-above {
     font-family: 'Sterion Regular', sans-serif;
     font-size: 3.5rem;
-    margin-top: 120px;
+    margin-top: 110px;
     justify-content: center;
 }
 .team-title {
@@ -136,7 +143,6 @@ body {
 }
 
 .titles-core {
-    padding-left: 30px;
     font-family: 'Sterion Regular', sans-serif;
     font-size: 4rem;
     margin: 0 auto 20px auto;
