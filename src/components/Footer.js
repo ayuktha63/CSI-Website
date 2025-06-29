@@ -62,7 +62,7 @@ const Footer = () => {
             </p>
 
             {/* Designer & Developer Credit */}
-            <p className="footer-designer">Designed by Niranj R</p>
+            <p className="footer-designer">Designed by Niranj R & Sradhya Renish</p>
             <p className="footer-designer">Developed by Krishna Prasad</p>
         </footer>
     );
