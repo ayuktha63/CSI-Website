@@ -50,7 +50,7 @@ body {
     font-size: 4rem;
     margin: 0 auto 20px auto;
     width: 30%;
-    text-align: right;
+    text-align: left;
 }
 
 .titles-market {
@@ -80,7 +80,7 @@ body {
     text-align: center;
     padding: 50px 20px;
     background: #000000;
-    min-height: 620vh;
+    min-height: 670vh;
     color: white;
     position: relative;
     width: 100%;
@@ -112,10 +112,19 @@ body {
 }
 
 /* Team Title */
+.title {
+    display: flex;
+    flex-direction: column;
+}
+.team-title-above {
+    font-family: 'Sterion Regular', sans-serif;
+    font-size: 3.5rem;
+    margin-top: 120px;
+    justify-content: center;
+}
 .team-title {
     font-family: 'Sterion Regular', sans-serif;
-    font-size: 4rem;
-    margin-bottom: 20px;
+    font-size: 14rem;
 }
 
 .titles {
@@ -137,9 +146,9 @@ body {
 /* Team Description */
 .team-description {
     font-family: sans-serif;
-    font-size: 1.2rem;
-    max-width: 600px;
-    margin: 0 auto 40px;
+    font-size: 1rem;
+    max-width: 800px;
+    margin: 0 auto 0 auto;
 }
 
 /* Team Members Container */
@@ -148,7 +157,15 @@ body {
     flex-wrap: wrap;
     padding-left: 20px;
     justify-content: center;
-    gap: 30px;
+    margin-top: 10rem;
+    gap: 90px;
+}
+
+.faculty {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Team Member Card */
@@ -234,7 +251,7 @@ body {
 }
 
 /* Mobile Responsive Styles */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 850px) {
     .thecreative,
     .theevent,
     .thecore,
@@ -242,7 +259,7 @@ body {
     .themarket {
         align-items: center;
         width: 100%;
-        padding: 0 10px;
+        padding: 0 15px;
     }
 
     .members-card,
