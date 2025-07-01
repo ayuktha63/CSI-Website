@@ -1,5 +1,4 @@
 import "../styles/ContactUs.css";
-import ModelViewer from "./ModelViewer";
 
 const ContactUs = () => {
   return (
