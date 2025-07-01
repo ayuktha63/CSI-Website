@@ -49,12 +49,23 @@
 
 .register-button {
   padding: 10px 20px;
-  background-color: #171717;
-  color: blue;
+  background: linear-gradient(0deg, #040404, #171717);
+  color: #ffffff;
   border: 1px solid #363636;
   border-radius: 8px;
   font-weight: bold;
   cursor: pointer;
+}
+
+.register-button:hover {
+  padding: 10px 20px;
+  background: linear-gradient(1800deg, #ffffff, #f2f2ff);
+  color: rgb(0, 0, 47);
+  border: 1px solid #363636;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transform: scale(1.1);
 }
 
 .event-description-text {
