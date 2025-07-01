@@ -1,4 +1,3 @@
-
 import "../styles/ContactUs.css";
 import ModelViewer from "./ModelViewer";
 
@@ -9,7 +8,7 @@ const ContactUs = () => {
 
       <div className="contact-box">
         <div className="contact-left">
-          <h3>Let's Get In Touch</h3>
+          <h3>Get in Touch with Us</h3>
           <form className="contact-form">
             <div className="form-row">
               <input type="text" placeholder="First Name" required />
@@ -18,13 +17,15 @@ const ContactUs = () => {
             <input type="email" placeholder="Email" required />
             <input type="tel" placeholder="Phone Number" required />
             <textarea placeholder="Your Message" rows="5" required></textarea>
-            <button type="submit">Send Message</button>
+            <button type="submit">Send it to us</button>
           </form>
         </div>
 
         <div className="contact-right">
-          {/* ✅ Embed 3D Model here properly */}
-          <ModelViewer />
+          <div className="model-container">
+            <img src="./assets/phone.png" alt="Phone Mockup" className="phone-mockup" />
+          </div>
+
         </div>
       </div>
     </section>
