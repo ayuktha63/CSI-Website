@@ -1,0 +1,268 @@
+[33mcommit 0fb56108a9aef7e8d798c719c91fef5e1c41aae5[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: niranj-r <niranj.njai@gmail.com>
+Date:   Mon Jun 30 10:45:33 2025 +0530
+
+    Initial commit
+
+[33mcommit c057e576e25c9d43caaccb0e475ab12754c56582[m
+Author: niranj-r <niranj.njai@gmail.com>
+Date:   Mon Jun 30 02:03:52 2025 +0530
+
+    Refactor code structure for improved readability and maintainability
+
+[33mcommit 8256c38a008ee77ab632466357a3b7da90a64ee6[m
+Merge: 6c23ae2 12a67fe
+Author: NIRANJ R <151998955+niranj-r@users.noreply.github.com>
+Date:   Sun Jun 29 23:53:09 2025 +0530
+
+    Merge pull request #3 from sradhya9/main
+    
+    Implement code changes to enhance functionality and improve performance
+
+[33mcommit 6c23ae213220b0185b834ea97df994963d1fb69d[m
+Author: niranj-r <niranj.njai@gmail.com>
+Date:   Sun Jun 29 23:52:21 2025 +0530
+
+    Fix member names and roles in Team component; update CSS for layout adjustments
+
+[33mcommit 12a67fef81cad5d65e6617fe4e20f8527f204f9a[m
+Author: sradhya9 <sradhyarenish9@gmail.com>
+Date:   Sun Jun 29 23:52:10 2025 +0530
+
+    Implement code changes to enhance functionality and improve performance
+
+[33mcommit 547930a7f67bc096987114cc0a36eb85d286c5c4[m
+Merge: b933ada c37c421
+Author: NIRANJ R <151998955+niranj-r@users.noreply.github.com>
+Date:   Sun Jun 29 23:15:55 2025 +0530
+
+    Merge pull request #2 from sradhya9/main
+    
+    team
+
+[33mcommit c37c421f1e0fc6f7dac89e5ae643727df9aa232a[m
+Merge: 6b33cff b933ada
+Author: sradhya9 <sradhyarenish9@gmail.com>
+Date:   Sun Jun 29 23:14:58 2025 +0530
+
+    Merge branch 'main' of https://github.com/sradhya9/CSI-Website
+
+[33mcommit 6b33cff3179df29f7891fd81514b5f5ef5a060a5[m
+Author: sradhya9 <sradhyarenish9@gmail.com>
+Date:   Sun Jun 29 23:14:54 2025 +0530
+
+    Implement feature X to enhance user experience and fix bug Y in module Z
+
+[33mcommit b933ada15ea13a790fec57466d6f0fd3973748f4[m
+Merge: 33d39dc 14cfda2
+Author: NIRANJ R <151998955+niranj-r@users.noreply.github.com>
+Date:   Sun Jun 29 22:51:53 2025 +0530
+
+    Merge pull request #1 from sradhya9/main
+    
+    team-change
+
+[33mcommit 14cfda292251034cb6352aa102e6678bbec7be13[m
+Author: sradhya9 <sradhyarenish9@gmail.com>
+Date:   Sun Jun 29 22:49:17 2025 +0530
+
+    team-change
+
+[33mcommit 33d39dca1b07fb1ae762faab15cf4716e490e3d1[m
+Author: niranj-r <niranj.njai@gmail.com>
+Date:   Sun Jun 29 22:04:48 2025 +0530
+
+    Update designer credit in Footer component
+
+[33mcommit beb30a73cd4f64d5f335a40086e346a3673448e5[m
+Author: niranj-r <niranj.njai@gmail.com>
+Date:   Sun Jun 29 22:02:55 2025 +0530
+
+    Refactor styles across Header, Home, and Team components
+    
+    - Reduced Header height from 90px to 80px for a more compact design.
+    - Increased Home component height from 60px to 70px for better spacing.
+    - Adjusted Team component styles:
+      - Changed text alignment from right to left.
+      - Increased minimum height from 620vh to 670vh for improved layout.
+      - Modified team title font size from 4rem to 14rem for emphasis.
+      - Updated team description font size from 1.2rem to 1rem and max-width to 800px.
+      - Added margin-top to faculty section and adjusted gap between team members.
+      - Enhanced mobile responsiveness by changing media query breakpoint from 768px to 850px and adjusted padding.
+
+[33mcommit 6a47e5d278d76ff8a8086c990e19036a20f4b398[m
+Author: ayuktha63 <krishnaprasadsm63@gmail.com>
+Date:   Fri Jun 27 20:58:06 2025 +0530
+
+    fixes
+
+[33mcommit 1cb3c0711a88a0d908ab5230803cf7fa0ec22d5d[m
+Author: ayuktha63 <krishnaprasadsm63@gmail.com>
+Date:   Fri Jun 27 01:40:26 2025 +0530
+
+    fixes
+
+[33mcommit e8dbd1cfb575490e1a5b16eba637ae55145f03e0[m
+Author: ayuktha63 <krishnaprasadsm63@gmail.com>
+Date:   Fri Jun 27 01:23:31 2025 +0530
+
+    teampage
+
+[33mcommit 9e68f5be66e70e98a09b9796dd72fa9a0725f6ff[m
+Author: ayuktha63 <krishnaprasadsm63@gmail.com>
+Date:   Fri Jun 27 00:48:41 2025 +0530
+
+    teampage
+
+[33mcommit 03ada9fff72a951236402d6e4adde7e2295ba926[m
+Author: ayuktha63 <krishnaprasadsm63@gmail.com>
+Date:   Fri May 23 23:13:36 2025 +0530
+
+    routingissue
+
+[33mcommit a81ef2cc943bb11fb0f8ac9bb90ab817cf54dc1d[m
+Author: ayuktha63 <krishnaprasadsm63@gmail.com>
+Date:   Fri May 23 23:03:46 2025 +0530
+
+    routingissue
+
+[33mcommit 2393f4e9c73cc8b4c919b68a661fba4def6b0226[m
+Author: ayuktha63 <krishnaprasadsm63@gmail.com>
+Date:   Fri May 23 22:59:09 2025 +0530
+
+    contact heading
+
+[33mcommit c13b1e02d0b9e048c6328e541b297eb4069de9f8[m
+Author: ayuktha63 <krishnaprasadsm63@gmail.com>
+Date:   Fri May 23 22:51:37 2025 +0530
+
+    footer and header routing issue
+
+[33mcommit f952547a377c80b6997831ab520fb4f44bb091a7[m
+Author: ayuktha63 <krishnaprasadsm63@gmail.com>
+Date:   Fri May 23 22:40:07 2025 +0530
+
+    obj
+
+[33mcommit 9335147eb235b4118c012671dfddf602c3519208[m
+Author: ayuktha63 <krishnaprasadsm63@gmail.com>
+Date:   Fri May 23 13:46:52 2025 +0530
+
+    semi circle
+
+[33mcommit a7ed01fea9c5c29d7ea1a180238858bdb9d5f45e[m
+Author: ayuktha63 <krishnaprasadsm63@gmail.com>
+Date:   Fri May 23 12:49:11 2025 +0530
+
+    semi circle
+
+[33mcommit 2ad7f4fc6e9e4cfce6fcb987dec35a829240efb5[m
+Author: ayuktha63 <krishnaprasadsm63@gmail.com>
+Date:   Fri May 23 12:43:29 2025 +0530
+
+    hamburger fix
+
+[33mcommit 9f196c679251c04213f248d99d6bdc1df00900ae[m
+Author: ayuktha63 <krishnaprasadsm63@gmail.com>
+Date:   Fri May 23 12:18:55 2025 +0530
+
+    2 events page example
+
+[33mcommit 408c5be0ca81bdea622ca6a86b1ade693345d02d[m
+Author: ayuktha63 <krishnaprasadsm63@gmail.com>
+Date:   Wed May 21 01:28:51 2025 +0530
+
+    execom members page
+
+[33mcommit 2892e587fba51bd455c24ff9d20b6478468bf2e9[m
+Author: ayuktha63 <krishnaprasadsm63@gmail.com>
+Date:   Tue May 20 16:47:08 2025 +0530
+
+    page partially completed events
+
+[33mcommit bd656ae03f5d8feadfd1213257ad01fd8a9bd3c3[m
+Author: ayuktha63 <krishnaprasadsm63@gmail.com>
+Date:   Tue May 20 16:14:11 2025 +0530
+
+    started again
+
+[33mcommit a160280d4891b3aaa0342495b08e14d6f6b511c6[m
+Author: ayuktha63 <krishnaprasadsm63@gmail.com>
+Date:   Tue Apr 1 23:23:20 2025 +0530
+
+    building
+
+[33mcommit b20559fb3d53d35b173824a5e575da8b3f35c7ef[m
+Author: ayuktha63 <krishnaprasadsm63@gmail.com>
+Date:   Tue Apr 1 23:22:29 2025 +0530
+
+    Team page
+
+[33mcommit 528076025c53fb2b7279ed81aa7bc1c6c4c2cef1[m
+Author: ayuktha63 <krishnaprasadsm63@gmail.com>
+Date:   Tue Apr 1 15:21:07 2025 +0530
+
+    event page
+
+[33mcommit f32889e75082e028273f16e1d7c3e28b7b7542a3[m
+Author: ayuktha63 <krishnaprasadsm63@gmail.com>
+Date:   Mon Mar 3 02:32:41 2025 +0530
+
+    moving cursor and first event
+
+[33mcommit 0c0009d1d8135f607b88bc30d654bd24102ef7cc[m
+Author: ayuktha63 <krishnaprasadsm63@gmail.com>
+Date:   Mon Mar 3 02:18:35 2025 +0530
+
+    first event added
+
+[33mcommit 6c10d1016a57c19881d1770c8cc4727bd2687863[m
+Author: ayuktha63 <krishnaprasadsm63@gmail.com>
+Date:   Mon Mar 3 01:04:03 2025 +0530
+
+    Events page
+
+[33mcommit 81ac49ce86e7889ac2fe146f8b6666c59146785c[m
+Author: ayuktha63 <krishnaprasadsm63@gmail.com>
+Date:   Sun Mar 2 18:38:06 2025 +0530
+
+    footer and header update
+
+[33mcommit d2984e9546539da86641b247faa9267711c97c35[m
+Author: ayuktha63 <krishnaprasadsm63@gmail.com>
+Date:   Sun Mar 2 17:30:24 2025 +0530
+
+    color changes
+
+[33mcommit 6d1075769e17828f62276ad08838145d913671f7[m
+Author: ayuktha63 <krishnaprasadsm63@gmail.com>
+Date:   Sun Mar 2 17:09:04 2025 +0530
+
+    index update
+
+[33mcommit e63e1fd0929dd197b4a52184b3ab40eb1ba19b6c[m
+Author: ayuktha63 <krishnaprasadsm63@gmail.com>
+Date:   Sun Mar 2 17:07:40 2025 +0530
+
+    index update
+
+[33mcommit ac8ad911f8b13f37f214f042fe52ce369ceec833[m
+Author: ayuktha63 <krishnaprasadsm63@gmail.com>
+Date:   Sun Mar 2 17:03:31 2025 +0530
+
+    indexupdate
+
+[33mcommit dfc0cb2b5e3c059255c1320ea77538cc2d8e18c5[m
+Author: ayuktha63 <krishnaprasadsm63@gmail.com>
+Date:   Sun Mar 2 17:00:11 2025 +0530
+
+    build
+
+[33mcommit 885927d1a6e0dcaedb0fcfad5c70bd671854b909[m
+Author: ayuktha63 <krishnaprasadsm63@gmail.com>
+Date:   Sun Mar 2 16:52:55 2025 +0530
+
+    Image carousel
+
+[33mcommit 373113226564f47aa5d80fb49dd174b5cc16a80e[m
+Author: ayukth
