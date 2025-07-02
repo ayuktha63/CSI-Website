@@ -7,7 +7,7 @@ const About = () => {
   return (
     <section className="about-csi">
       {/* Optional SVGs */}
-      <div className="svg-container-top-right">
+      <div className="svg-container-top-right"x>
         {/* Optional: insert SVG here if needed */}
       </div>
 
@@ -63,19 +63,19 @@ const About = () => {
           <h2 className="mission-heading">What We Stand For</h2>
           <ul className="mission-list">
             <li>
-              Innovation
+              <b>Innovation:</b> Encouraging creative thinking and adoption of emerging technologies to drive solutions.
             </li>
             <li>
-              Collaboration
+              <b>Collaboration:</b> Fostering teamwork and learning through group initiatives and community engagement.
             </li>
             <li>
-              Inclusivity
+              <b>Inclusivity:</b> Building a space where diverse perspectives are respected and every voice is valued.
             </li>
             <li>
-              Empowerment
+              <b>Empowerment:</b> Providing the tools and opportunities for individuals to grow, lead, and make an impact.
             </li>
             <li>
-              Knowledge Sharing
+              <b>Knowledge Sharing:</b> Promoting continuous learning through dialogue, peer support, and interactive events.
             </li>
           </ul>
         </div>

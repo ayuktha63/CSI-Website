@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'Sterion Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Sterion Regular'), url('../styles/Sterion-BLLld.woff') format('woff');
+}
+
 /* Carousel Container */
 .carousel-container {
     display: flex;
@@ -53,6 +60,16 @@
     text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.8);
     transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
 }
+.event_box::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60%; /* Adjust based on how tall you want the gradient */
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.988), transparent);
+    border-radius: 12px;
+    z-index: 1;
+}
 
 /* Carousel Animations */
 .center-slide {
@@ -87,7 +104,11 @@
     transform: scale(1.15) translateY(-5px);
     transition: transform 0.2s ease-in-out;
 }
-
+.event_box h3 {
+    font-family: 'Sterion Regular', sans-serif;
+    text-align: center;
+    z-index: 2;
+}
 /* 📱 Mobile Responsive Adjustments */
 @media (max-width: 768px) {
     .custom-carousel {
