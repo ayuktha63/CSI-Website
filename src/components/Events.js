@@ -33,7 +33,7 @@ const Events = () => {
                 <div className="events-heading-container">
                     <h1 className="events-heading">EVENTS</h1>
                 </div>
-
+<div className="events-container">
                 <div className="mouse-container">
                     {/* EcoCanvas Event */}
                     <div className="event-details left-text" data-aos="fade-left">
@@ -243,6 +243,7 @@ const Events = () => {
                         <div className="radiance-horizontal-line" data-aos="fade-left"></div>
                         <div className="motivational-horizontal-line" data-aos="fade-right"></div>
                     </div>
+                </div>
                 </div>
             </section>
         </div>

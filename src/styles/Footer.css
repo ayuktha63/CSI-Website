@@ -1,5 +1,8 @@
 .footer {
-    background: #000009;
+    background-image: url('../assets/footerbg.png');
+    background-size: cover;       /* scales image to cover the whole container */
+    background-repeat: no-repeat; /* prevents tiling */
+    background-position: center;  /* centers the image */
     color: white;
     text-align: center;
     padding: 60px 20px;
