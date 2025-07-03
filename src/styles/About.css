@@ -7,7 +7,43 @@
   overflow: hidden;
 }
 .about-csi-contents{
-    margin-top: 10%;
+    position: relative;
+    width:100%;
+    margin: 10% auto 5% auto;
+}
+.about-csi-texts {
+    font-size: 1.2rem;
+    width: 100%;
+    max-width: 900px;
+    line-height: 1.6;
+    opacity: 0.9;
+    margin: 10px auto 0 auto;
+    text-align: justify;
+}
+.about-container {
+  position: relative;
+  z-index: 1;
+  align-items: center;
+  pointer-events: none;
+}
+
+.about-csi-images {
+    display: flex;
+    align-items: center;
+    padding-top: 50px;
+    width: 100%;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+/* Individual Image Styles */
+.about-csi-image {
+    max-width: 300px;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+.left {
+    width: 30%;
 }
 .mission-bg {
   width: 65%;
