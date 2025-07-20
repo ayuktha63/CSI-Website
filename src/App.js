@@ -18,6 +18,12 @@ import TheoreticalComputerScience from "./components/TheoreticalComputerScience"
 import MainAboutUs from "./components/MainAboutUs"; // About Us page
 import ContactUs from "./components/ContactUs";
 import Team23 from "./components/Team23";
+import Encrypt from "./components/Encrypt";
+import Thunkable from "./components/Thunkable";
+import Gamedev from "./components/Gamedev";
+import Linkedin from "./components/Linkedin";
+import Resume from "./components/Resume";
+import Lensmaster from "./components/Lensmaster";
 
 const App = () => {
   useEffect(() => {
@@ -46,6 +52,12 @@ const App = () => {
           <Route path="/influenceofai" element={<InfluenceofAI />} /> {/* Influence of AI event details */}
           <Route path="/agm2025" element={<AGM2025 />} /> {/* AGM 2025 event details */}
           <Route path="/theoreticalcomputerscience" element={<TheoreticalComputerScience />} /> {/* Theoretical Computer Science event details */}
+          <Route path="/encrypt" element={<Encrypt />} /> {/* Encrypt event details */}
+          <Route path="/thunkable" element={<Thunkable />} />
+          <Route path="/gamedev" element={<Gamedev />} />
+          <Route path="/linkedin" element={<Linkedin />} />
+          <Route path="/resume" element={<Resume />} />
+          <Route path="/lensmaster" element={<Lensmaster />} />
           {/* Add more routes as needed */}
         </Routes>
       </main>

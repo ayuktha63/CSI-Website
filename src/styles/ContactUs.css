@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
 
 .contact-section {
-  background: radial-gradient(ellipse at center, #0c0c1b 0%, #000009 100%);
+  background: radial-gradient(ellipse at center, #0a0a12 0%, #000009 100%);
   color: white;
   padding: 60px 20px;
   display: flex;
@@ -11,14 +11,73 @@
 
 .contact-heading {
   font-family: 'Sterion Regular', sans-serif;
+  margin: 150px auto 20px auto;
   text-align: center;
-  font-size: 3rem;
+  font-size: 5rem;
   margin-bottom: 40px;
+  width: fit-content;
+  position: relative;   /* important to apply z-index */
+  z-index: 1;
+}
+
+.squares-container {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 110%;
+  height: 100%;
+  z-index: 0; /* Ensure it stays behind the content */
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+.squares-canvas {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  pointer-events: auto; /* Keeps canvas interactive */
+}
+
+.rectangle-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(0deg, #17171700, #03030B);
+  opacity: 1; /* Adjust opacity for desired effect */
+  z-index: 1; /* Ensure it stays behind the content */
+  pointer-events: none;
+}
+
+.rectangle-bottom-background {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30%;
+  background: linear-gradient(180deg, #03030B00, #03030B);
+  opacity: 1; /* Adjust opacity for desired effect */
+  z-index: 1; /* Ensure it stays behind the content */
+  pointer-events: none;
 }
 
 .contact-box {
   display: flex;
   flex-wrap: wrap;
+  position: relative;
   max-width: 1100px;
   width: 100%;
   border-radius: 20px;
