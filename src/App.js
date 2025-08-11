@@ -24,6 +24,8 @@ import Gamedev from "./components/Gamedev";
 import Linkedin from "./components/Linkedin";
 import Resume from "./components/Resume";
 import Lensmaster from "./components/Lensmaster";
+import EventsYear from "./components/EventsYear"; // Import EventsYear
+import TeamYear from "./components/TeamYear"; // Import TeamYear
 
 const App = () => {
   useEffect(() => {
@@ -41,7 +43,9 @@ const App = () => {
         <Routes>
           <Route path="/" element={<MainHome />} /> {/* Updated Route */}
           <Route path="/events" element={<Events />} />
+          <Route path="/events/:year" element={<EventsYear />} /> {/* New dynamic route for events by year */}
           <Route path="/team" element={<Team />} />
+          <Route path="/team/:year" element={<TeamYear />} /> {/* New dynamic route for team by year */}
           <Route path="/adastra" element={<Adastra />} />
           <Route path="/software" element={<Software />} />
           <Route path="/about" element={<MainAboutUs />} /> {/* Updated Route */}

@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from "react";
-import { Link, useLocation, useNavigate } from "react-router-dom"; // Import hooks for navigation
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import "../styles/Header.css";
-import headerImage from "../assets/header_bg.png"; // Background image
-import logoImage from "../assets/logo.png"; // Logo image
+import headerImage from "../assets/header_bg.png";
+import logoImage from "../assets/logo.png";
 
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+    const [eventsDropdownOpen, setEventsDropdownOpen] = useState(false);
+    const [teamDropdownOpen, setTeamDropdownOpen] = useState(false);
     const location = useLocation();
     const navigate = useNavigate();
 
@@ -44,10 +46,33 @@ const Header = () => {
                 <nav className="nav">
                     <ul>
                         <li><Link to="/">Home</Link></li>
-                        <li><Link to="/events">Events</Link></li>
-                        <li><Link to="/team">Team</Link></li>
+                        <li className="dropdown">
+                            <Link to="/events">Events</Link>
+                            <ul className="dropdown-menu">
+                                <li><Link to="/events/2024">2024</Link></li>
+                                <li><Link to="/events/2023">2023</Link></li>
+                            </ul>
+                        </li>
+                        <li className="dropdown">
+                            <Link to="/team">Team</Link>
+                            <ul className="dropdown-menu">
+                                <li><Link to="/team/2024">2024</Link></li>
+                                <li><Link to="/team/2023">2023</Link></li>
+                            </ul>
+                        </li>
                         <li><Link to="/about">About Us</Link></li>
-                        <li><a href="#join" className="join-btn" onClick={(e) => { e.preventDefault(); handleScrollToSection("join"); }}>Join CSI</a></li>
+                        <li>
+                            <a
+                                href="#join"
+                                className="join-btn"
+                                onClick={(e) => {
+                                    e.preventDefault();
+                                    handleScrollToSection("join");
+                                }}
+                            >
+                                Join CSI
+                            </a>
+                        </li>
                     </ul>
                 </nav>
             )}
@@ -66,11 +91,72 @@ const Header = () => {
 
                     <nav className={`mobile-nav ${menuOpen ? "open" : ""}`}>
                         <ul>
-                            <li><Link to="/" onClick={() => setMenuOpen(false)}>Home</Link></li>
-                            <li><Link to="/events" onClick={() => setMenuOpen(false)}>Events</Link></li>
-                            <li><Link to="/team" onClick={() => setMenuOpen(false)}>Team</Link></li>
-                            <li><Link to="/about" onClick={() => setMenuOpen(false)}>About Us</Link></li>
-                            <li><a href="#join" className="join-btn" onClick={(e) => { e.preventDefault(); handleScrollToSection("join"); }}>Join CSI</a></li>
+                            <li>
+                                <Link to="/" onClick={() => setMenuOpen(false)}>
+                                    Home
+                                </Link>
+                            </li>
+                            <li className={`mobile-dropdown ${eventsDropdownOpen ? "open" : ""}`}>
+                                <button
+                                    className="mobile-dropdown-toggle"
+                                    onClick={() => setEventsDropdownOpen(!eventsDropdownOpen)}
+                                    aria-expanded={eventsDropdownOpen}
+                                    aria-label="Toggle Events dropdown"
+                                >
+                                    Events
+                                </button>
+                                <ul className="mobile-dropdown-menu">
+                                    <li>
+                                        <Link to="/events/2024" onClick={() => setMenuOpen(false)}>
+                                            2024
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link to="/events/2023" onClick={() => setMenuOpen(false)}>
+                                            2023
+                                        </Link>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li className={`mobile-dropdown ${teamDropdownOpen ? "open" : ""}`}>
+                                <button
+                                    className="mobile-dropdown-toggle"
+                                    onClick={() => setTeamDropdownOpen(!teamDropdownOpen)}
+                                    aria-expanded={teamDropdownOpen}
+                                    aria-label="Toggle Team dropdown"
+                                >
+                                    Team
+                                </button>
+                                <ul className="mobile-dropdown-menu">
+                                    <li>
+                                        <Link to="/team/2024" onClick={() => setMenuOpen(false)}>
+                                            2024
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link to="/team/2023" onClick={() => setMenuOpen(false)}>
+                                            2023
+                                        </Link>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <Link to="/about" onClick={() => setMenuOpen(false)}>
+                                    About Us
+                                </Link>
+                            </li>
+                            <li>
+                                <a
+                                    href="#join"
+                                    className="join-btn"
+                                    onClick={(e) => {
+                                        e.preventDefault();
+                                        handleScrollToSection("join");
+                                    }}
+                                >
+                                    Join CSI
+                                </a>
+                            </li>
                         </ul>
                     </nav>
 

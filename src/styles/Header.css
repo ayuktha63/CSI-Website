@@ -52,6 +52,10 @@
     gap: 50px;
 }
 
+.nav ul li {
+    position: relative;
+}
+
 .nav ul li a {
     color: #959595;
     text-decoration: none;
@@ -62,6 +66,49 @@
 
 .nav ul li a:hover {
     color: #ffffff;
+}
+
+/* Dropdown Styles */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none !important;
+    /* Ensure dropdown is hidden by default with high specificity */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: rgba(0, 0, 0, 0.9);
+    backdrop-filter: blur(10px);
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    min-width: 150px;
+    z-index: 1001;
+    border-radius: 5px;
+}
+
+.nav .dropdown:hover .dropdown-menu {
+    display: block !important;
+    /* Show dropdown only on hover with high specificity */
+}
+
+.dropdown-menu li {
+    margin: 0;
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 10px 20px;
+    color: #959595;
+    text-decoration: none;
+    transition: color 0.3s, background 0.3s;
+}
+
+.dropdown-menu li a:hover {
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.1);
 }
 
 /* Active State */
@@ -104,7 +151,6 @@
     background: none;
     border: none;
     z-index: 999;
-    /* padding-right: 30px; */
 }
 
 .bar {
@@ -117,25 +163,24 @@
 
 /* Mobile Navigation */
 .mobile-nav {
-  position: fixed;
-  top: 0;
-  right: -100%; /* Hidden by default */
-  width: 80%;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.95);
-  backdrop-filter: blur(10px);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  transition: right 0.4s ease-in-out;
-  z-index: 998; /* Just below hamburger */
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 80%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.95);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: right 0.4s ease-in-out;
+    z-index: 998;
 }
 
 .mobile-nav.open {
-  right: 0; /* Slide menu into view */
+    right: 0;
 }
-
 
 /* Navigation List */
 .mobile-nav ul {
@@ -162,17 +207,57 @@
     transform: scale(1.1);
 }
 
-/* Overlay when menu is open */
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.6);
-  z-index: 997; /* Below mobile nav */
+/* Mobile Dropdown */
+.mobile-dropdown {
+    margin: 20px 0;
 }
 
+.mobile-dropdown-toggle {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    text-align: center;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.mobile-dropdown-toggle:hover {
+    color: #00aaff;
+    transform: scale(1.1);
+}
+
+.mobile-dropdown-menu {
+    list-style: none;
+    padding: 0 0 0 20px;
+    display: none;
+}
+
+.mobile-dropdown.open .mobile-dropdown-menu {
+    display: block;
+}
+
+.mobile-dropdown-menu li a {
+    font-size: 1.2rem;
+    color: #959595;
+    padding: 5px 20px;
+}
+
+/* Overlay when menu is open */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 997;
+}
 
 /* Hamburger Icon Animations */
 .hamburger {
