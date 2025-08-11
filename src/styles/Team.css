@@ -359,5 +359,6 @@ body {
     .faculty .titles {
         margin-left: 0 !important;
         margin-right: 0 !important;
+        order: -1;
     }
 }

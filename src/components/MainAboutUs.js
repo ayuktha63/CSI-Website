@@ -19,7 +19,7 @@ const About = () => {
           disableRotation={false}
         />
       </div>
-      <div className="about-container"data-aos="fade-up">
+      <div className="about-container" data-aos="fade-up">
         {/* Optional SVGs */}
         <div className="svg-container-top-right" x>
           {/* Optional: insert SVG here if needed */}

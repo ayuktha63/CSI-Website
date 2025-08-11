@@ -63,7 +63,7 @@ const Footer = () => {
 
             {/* Designer & Developer Credit */}
             <p className="footer-designer">Designed by Niranj R & Sradhya Renish</p>
-            <p className="footer-designer">Developed by Krishna Prasad</p>
+            <p className="footer-designer">Developed by Krishna Prasad & Team</p>
         </footer>
     );
 };
