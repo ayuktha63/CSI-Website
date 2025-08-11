@@ -41,9 +41,9 @@ const Home = () => {
             >
                 {slides.map((slide, index) => (
                     <div className="text-slide" key={index}>
-                        <h1 className="title">{slide.title}</h1>
+                        <h1 className="title-home">{slide.title}</h1>
                         <p className="subtitle">{slide.subtitle}</p>
-                        <h1 className="title">{slide.title}</h1>
+                        <h1 className="title-home">{slide.title}</h1>
                     </div>
                 ))}
             </div>
