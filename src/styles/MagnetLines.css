@@ -1,0 +1,14 @@
+.magnetLines-container {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.magnetLines-container span {
+    display: block;
+    transform-origin: center;
+    will-change: transform;
+    transform: rotate(var(--rotate));
+}

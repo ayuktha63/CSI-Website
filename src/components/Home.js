@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "../styles/Home.css";
 import bottomImage from "../assets/mbcet-photo.svg";
+import MagnetLines from "./MagnetLines";
 
 const slides = [
     { title: "CSI SB MBCET", subtitle: "CSI SB MBCET" },
@@ -15,12 +16,23 @@ const Home = () => {
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrentSlide((prev) => (prev + 1) % slides.length);
-        }, 2000);
+        }, 4000);
         return () => clearInterval(interval);
     }, []);
 
     return (
         <section id="home" className="home">
+            {/* MagnetLines only inside this section */}
+            <div className="magnet-lines-bg">
+                <MagnetLines
+                    lineColor="#ffffffff"
+                    lineWidth="0.3vmin"
+                    lineHeight="4vmin"
+                    baseAngle={0}
+                />
+            </div>
+
+            {/* Text slider */}
             <div
                 className="text-slider"
                 style={{

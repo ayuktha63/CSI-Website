@@ -13,12 +13,29 @@
     background: #000;
 }
 
+/* MagnetLines stays only in this section */
+.magnet-lines-bg {
+    position: absolute;
+    /* stays inside the section */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+    pointer-events: none;
+    opacity: 0.25;
+}
+
 /* Text slider wrapper */
 .text-slider {
     display: flex;
     white-space: nowrap;
     transition: transform 1s ease-in-out;
     will-change: transform;
+    z-index: 2;
 }
 
 /* Each slide */
@@ -29,7 +46,6 @@
     line-height: 1.1;
     padding: 20px;
     box-sizing: border-box;
-    /* background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #000 100%); */
 }
 
 .title {
@@ -48,7 +64,7 @@
     padding: 0;
 }
 
-/* Fixed bottom image */
+/* Bottom image */
 .bottom-fixed-img {
     position: absolute;
     bottom: 0;
@@ -56,9 +72,8 @@
     width: 100vw;
     height: auto;
     pointer-events: none;
-    z-index: 1;
+    z-index: 10;
 }
-
 
 /* Responsive */
 @media (max-width: 768px) {
@@ -67,6 +82,11 @@
     }
 
     .subtitle {
-        font-size: 0.5rem;
+        font-size: 1.2rem;
+    }
+
+    .bottom-fixed-img {
+        bottom: 30px;
+        /* lift image slightly on mobile */
     }
 }
