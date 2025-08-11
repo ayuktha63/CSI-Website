@@ -59,7 +59,7 @@ const Header = () => {
                             <Link to="/team">Team</Link>
                             <ul className="dropdown-menu">
                                 <li><Link to="/team/2024">2024</Link></li>
-                                <li><Link to="/team/2023">2023</Link></li>
+                                <li><Link to="/team23">2023</Link></li>
                             </ul>
                         </li>
                         <li><Link to="/about">About Us</Link></li>
@@ -154,7 +154,7 @@ const Header = () => {
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link to="/team/2023" onClick={() => setMenuOpen(false)}>
+                                        <Link to="/team23" onClick={() => setMenuOpen(false)}>
                                             2023
                                         </Link>
                                     </li>

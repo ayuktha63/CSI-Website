@@ -123,12 +123,14 @@ body {
     display: flex;
     flex-direction: column;
 }
+
 .team-title-above {
     font-family: 'Sterion Regular', sans-serif;
     font-size: 3.5rem;
     margin-top: 110px;
     justify-content: center;
 }
+
 .team-title {
     font-family: 'Sterion Regular', sans-serif;
     font-size: 14rem;
@@ -258,6 +260,7 @@ body {
 
 /* Mobile Responsive Styles */
 @media screen and (max-width: 850px) {
+
     .thecreative,
     .theevent,
     .thecore,
@@ -304,7 +307,8 @@ body {
 
     .member-card {
         margin: 0 auto;
-        width: 250px; /* Same width as desktop */
+        width: 250px;
+        /* Same width as desktop */
         padding: 15px;
     }
 
