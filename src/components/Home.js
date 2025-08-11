@@ -1,14 +1,43 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "../styles/Home.css";
-import backgroundImage from "../assets/landing.png";
+import bottomImage from "../assets/mbcet-photo.svg";
+
+const slides = [
+    { title: "CSI SB MBCET", subtitle: "CSI SB MBCET" },
+    { title: "RENOVATING", subtitle: "renovating" },
+    { title: "REINTRODUCING", subtitle: "reintroducing" },
+    { title: "REIMAGINING", subtitle: "reimagining" },
+];
 
 const Home = () => {
+    const [currentSlide, setCurrentSlide] = useState(0);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentSlide((prev) => (prev + 1) % slides.length);
+        }, 2000);
+        return () => clearInterval(interval);
+    }, []);
+
     return (
-        <section
-            id="home"
-            className="home"
-            style={{ backgroundImage: `url(${backgroundImage})` }}
-        >
+        <section id="home" className="home">
+            <div
+                className="text-slider"
+                style={{
+                    transform: `translateX(-${currentSlide * 100}%)`,
+                }}
+            >
+                {slides.map((slide, index) => (
+                    <div className="text-slide" key={index}>
+                        <h1 className="title">{slide.title}</h1>
+                        <p className="subtitle">{slide.subtitle}</p>
+                        <h1 className="title">{slide.title}</h1>
+                    </div>
+                ))}
+            </div>
+
+            {/* Fixed bottom image */}
+            <img src={bottomImage} alt="Bottom" className="bottom-fixed-img" />
         </section>
     );
 };

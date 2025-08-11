@@ -36,7 +36,7 @@
 .event-title-and-button {
   display: flex;
   align-items: center;
-  gap: 200px;
+  gap: 100px;
   flex-wrap: wrap;
 }
 

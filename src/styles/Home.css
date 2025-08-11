@@ -1,65 +1,72 @@
-/* Home Section */
+@import url('https://fonts.cdnfonts.com/css/sterion');
+
 .home {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     width: 100%;
-    background-size: cover;
-    background-position: top;
-    background-repeat: no-repeat;
     position: relative;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    overflow: hidden;
     margin-top: 60px;
-    /* Adjusts to start below the fixed header */
+    overflow: hidden;
+    background: #000;
 }
 
-/* Fixed Header */
-.header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: #000000cc;
-    color: white;
-    padding: 15px 20px;
+/* Text slider wrapper */
+.text-slider {
+    display: flex;
+    white-space: nowrap;
+    transition: transform 1s ease-in-out;
+    will-change: transform;
+}
+
+/* Each slide */
+.text-slide {
+    flex: 0 0 100%;
     text-align: center;
-    z-index: 1000;
-    height: 70px;
-    /* Define a fixed height for consistency */
+    color: white;
+    line-height: 1.1;
+    padding: 20px;
+    box-sizing: border-box;
+    /* background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #000 100%); */
 }
 
-/* 🌍 RESPONSIVENESS */
-@media (max-width: 1024px) {
-    .home {
-        background-attachment: scroll;
-    }
+.title {
+    font-family: 'Sterion Regular', sans-serif;
+    font-size: 8rem;
+    color: #003cff;
+    margin: 0;
+    padding: 0;
 }
 
+.subtitle {
+    font-family: 'Sterion Regular', sans-serif;
+    font-size: 4rem;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* Fixed bottom image */
+.bottom-fixed-img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: auto;
+    pointer-events: none;
+    z-index: 1;
+}
+
+
+/* Responsive */
 @media (max-width: 768px) {
-    .header {
-        padding: 10px 15px;
-        font-size: 1rem;
-        height: 50px;
-        /* Adjust height for smaller screens */
+    .title {
+        font-size: 2.5rem;
     }
 
-    .home {
-        margin-top: 50px;
-        /* Adjust spacing accordingly */
-    }
-}
-
-@media (max-width: 480px) {
-    .header {
-        padding: 8px 12px;
-        font-size: 0.9rem;
-        height: 45px;
-    }
-
-    .home {
-        margin-top: 45px;
+    .subtitle {
+        font-size: 0.5rem;
     }
 }
