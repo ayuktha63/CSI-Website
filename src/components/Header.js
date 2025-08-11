@@ -17,6 +17,8 @@ const Header = () => {
             setIsMobile(window.innerWidth <= 768);
             if (window.innerWidth > 768) {
                 setMenuOpen(false);
+                setEventsDropdownOpen(false);
+                setTeamDropdownOpen(false);
             }
         };
         window.addEventListener("resize", handleResize);
@@ -97,14 +99,23 @@ const Header = () => {
                                 </Link>
                             </li>
                             <li className={`mobile-dropdown ${eventsDropdownOpen ? "open" : ""}`}>
-                                <button
-                                    className="mobile-dropdown-toggle"
-                                    onClick={() => setEventsDropdownOpen(!eventsDropdownOpen)}
-                                    aria-expanded={eventsDropdownOpen}
-                                    aria-label="Toggle Events dropdown"
-                                >
-                                    Events
-                                </button>
+                                <div className="mobile-dropdown-header">
+                                    <Link
+                                        to="/events"
+                                        onClick={() => setMenuOpen(false)}
+                                        className="mobile-nav-link"
+                                    >
+                                        Events
+                                    </Link>
+                                    <button
+                                        className="mobile-dropdown-toggle"
+                                        onClick={() => setEventsDropdownOpen(!eventsDropdownOpen)}
+                                        aria-expanded={eventsDropdownOpen}
+                                        aria-label="Toggle Events dropdown"
+                                    >
+                                        <span className="dropdown-chevron">▼</span>
+                                    </button>
+                                </div>
                                 <ul className="mobile-dropdown-menu">
                                     <li>
                                         <Link to="/events/2024" onClick={() => setMenuOpen(false)}>
@@ -119,14 +130,23 @@ const Header = () => {
                                 </ul>
                             </li>
                             <li className={`mobile-dropdown ${teamDropdownOpen ? "open" : ""}`}>
-                                <button
-                                    className="mobile-dropdown-toggle"
-                                    onClick={() => setTeamDropdownOpen(!teamDropdownOpen)}
-                                    aria-expanded={teamDropdownOpen}
-                                    aria-label="Toggle Team dropdown"
-                                >
-                                    Team
-                                </button>
+                                <div className="mobile-dropdown-header">
+                                    <Link
+                                        to="/team"
+                                        onClick={() => setMenuOpen(false)}
+                                        className="mobile-nav-link"
+                                    >
+                                        Team
+                                    </Link>
+                                    <button
+                                        className="mobile-dropdown-toggle"
+                                        onClick={() => setTeamDropdownOpen(!teamDropdownOpen)}
+                                        aria-expanded={teamDropdownOpen}
+                                        aria-label="Toggle Team dropdown"
+                                    >
+                                        <span className="dropdown-chevron">▼</span>
+                                    </button>
+                                </div>
                                 <ul className="mobile-dropdown-menu">
                                     <li>
                                         <Link to="/team/2024" onClick={() => setMenuOpen(false)}>
